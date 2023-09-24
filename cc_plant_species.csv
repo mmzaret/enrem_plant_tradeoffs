@@ -1,0 +1,665 @@
+﻿ID,Species,Functional group,Duration,Lifeform,Pathway,Taxon,Specid,5Lspecid,Origin,ITISTaxon,ITISRecognizedName,Family
+1,16 Species Weeds,Unknown,Unknown,Unknown,Unknown,996,,,Unknown,,,Unknown
+2,Acer negundo,W,Perennial,Woody,C3,317,Acernegu,Acene,Native,28749,Acer negundo,Aceraceae
+3,Acer rubrum,W,Perennial,Woody,C3,324,Acerrubr,Aceru,Native,28728,Acer rubrum,Aceraceae
+4,Acer sp.,W,Perennial,Woody,C3,359,Acersp,Acesp,Unknown,,,Aceraceae
+5,Achillea millefolium(lanulosa),F,Perennial,Non-legume forb,C3,501,Achimill,Achmi,Native,35423,Achillea millefolium,Asteraceae
+6,Achillea sp.,F,Perennial,Non-legume forb,C3,571,Achillsp,Achsp,Unknown,,,Asteraceae
+7,Agastache foeniculum,F,Perennial,Non-legume forb,C3,572,Agasfoen,Agafo,Native,32440,Agastache foeniculum,Lamiaceae
+8,Agrimonia sp.,F,Perennial,Non-legume forb,,1010,Agrimosp,Agrsp,Native and/or Introduced,,,Rosaceae
+9,Agropyron repens,C3,Perennial,Grass,C3,100,Agrorepe,Agrre,Introduced,40382,Agropyron repens,Poaceae
+10,Agropyron smithii,C3,Perennial,Grass,C3,108,Agrosmit,Agrsm,Native,40385,Agropyron smithii,Poaceae
+11,Agrostis alba,C3,Perennial,Grass,C3,142,Agroalba,Agral,Introduced,40390,Agrostis alba,Poaceae
+12,Agrostis scabra,C3,Perennial,Grass,C3,101,Agroscab,Agrsc,Native,40424,Agrostis scabra,Poaceae
+13,Agrostis sp.,C3,Perennial,Grass,C3,136,Agrostsp,Agrsp,Unknown,,,Poaceae
+14,Allium cernuum,F,Perennial,Non-legume forb,C3,720,Allicern,Allce,Native,42721,Allium cernuum,Lilliaceae
+15,Allium sp.,F,Perennial,Non-legume forb,C3,770,Alliumsp,Allsp,Native and/or Introduced,,,Lilliaceae
+16,Allium stellatum,F,Perennial,Non-legume forb,C3,582,Allistel,Allst,Native,42669,Allium stellatum,Lilliaceae
+17,Alnus incana,W,Perennial,Woody,C3,382,Alnuinca,Alnin,Native,,,Betulaceae
+18,Alnus rugosa,W,Perennial,Woody,C3,327,Alnurugo,Alnru,Native,19475,Alnus rugosa,Betulaceae
+19,Amaranthus retroflexus,F,Annual,Non-legume forb,C4,768,Amarretr,Amare,Introduced,20745,Amaranthus retroflexus,Amaranthaceae
+20,Ambrosia artemisiifolia elatior,F,Annual,Non-legume forb,C3,503,Ambrarte,Ambar,Native,182420,Ambrosia artemisiifolia elatior,Asteraceae
+21,Ambrosia coronopifolia,F,Perennial,Non-legume forb,C3,502,Ambrcoro,Ambco,Native,182425,Ambrosia coronopifolia,Asteraceae
+22,Amelanchier alnifolia,W,Perennial,Woody,,1012,Amelalni,Ameal,Native,,,Rosaceae
+23,Amelanchier arborea,W,Perennial,Woody,,1013,Amelarbo,Amear,Native,,,Rosaceae
+24,Amelanchier humilis,W,Perennial,Woody,,1014,Amelhumi,Amehu,Native,,,Rosaceae
+25,Amelanchier intermedia,W,Perennial,Woody,,1015,Amelinte,Amein,Native,,,Rosaceae
+26,Amelanchier laevis,W,Perennial,Woody,,1016,Amellaev,Amela,Native,,,Rosaceae
+27,Amelanchier sanguinea,W,Perennial,Woody,,1017,Amelsang,Amesa,Native,,,Rosaceae
+28,Amelanchier sp.,W,Perennial,Woody,C3,334,Amelansp,Amesp,Native,,,Rosaceae
+29,Amorpha canescens,L,Perennial,Legume,C3,400,Amorcane,Amoca,Native,25371,Amorpha canescens,Fabaceae
+30,Amphicarpa bracteata,L,Annual,Legume,C3,401,Amphbrac,Ampbr,Introduced,25388,Amphicarpa bracteata,Fabaceae
+31,Andropogon gerardi,C4,Perennial,Grass,C4,102,Andrgera,Andge,Native,40462,Andropogon gerardii,Poaceae
+32,Anemone cylindrica,F,Perennial,Non-legume forb,C3,504,Anemcyli,Anecy,Native,18438,Anemone cylindrica,Ranunculaceae
+33,Anemone patens,F,Perennial,Non-legume forb,C3,721,Anempate,Anepa,Native,508854,Anemone patens,Ranunculaceae
+34,Anemone quinquefolia,F,Perennial,Non-legume forb,C3,751,Anemquin,Anequ,Native,18448,Anemone quinquefolia,Ranunculaceae
+35,Anemone virginiana,F,Perennial,Non-legume forb,C3,611,Anemvirg,Anevi,Native,18451,Anemone virginiana,Ranunculaceae
+36,Annuals,Unknown,Annual,Unknown,Unknown,981,Annuals,Annua,Unknown,,,Unknown
+37,Antennaria fallax,F,Perennial,Non-legume forb,C3,622,Antefall,Antfa,Native,36729,Antennaria fallax,Asteraceae
+38,Antennaria neglecta,F,Perennial,Non-legume forb,C3,505,Antenegl,Antne,Native,36745,Antennaria neglecta,Asteraceae
+39,Antennaria plantaginifolia,F,Perennial,Non-legume forb,C3,662,Anteplan,Antpl,Native,36717,Antennaria plantaginifolia,Asteraceae
+40,Antennaria sp.,F,Perennial,Non-legume forb,C3,645,Antennsp,Antsp,Native,,,Asteraceae
+41,Apocynum androsaemifolium,F,Perennial,Non-legume forb,C3,708,Apocandr,Apoan,Native,30156,Apocynum androsaemifolium,Apocynaceae
+42,Apocynum cannabinum,F,Perennial,Non-legume forb,C3,573,Apoccann,Apoca,Native,30157,Apocynum cannabinum,Apocynaceae
+43,Apocynum sibiricum,F,Perennial,Non-legume forb,,1018,Apocsibi,Aposi,Native,,,Apocynaceae
+44,Apocynum sp.,F,Perennial,Non-legume forb,C3,663,Apocynsp,Aposp,Unknown,,,Apocynaceae
+45,Aquilegia canadensis,F,Perennial,Non-legume forb,C3,639,Aquicana,Aquca,Native,18730,Aquilegia canadensis,Ranunculaceae
+46,Arabis divaricarpa,F,Biennial,Non-legume forb,C3,574,Arabdiva,Aradi,Native,22688,Arabis divaricarpa,Brassicaceae
+47,Arabis glabra,F,Biennial,Non-legume forb,C3,575,Arabglab,Aragl,Native,22695,Arabis glabra,Brassicaceae
+48,Arabis hirsuta,F,Biennial,Non-legume forb,C3,617,Arabhirs,Arahi,Native,184344,Arabis hirsuta,Brassicaceae
+49,Arabis sp.,F,Biennial,Non-legume forb,C3,506,Arabissp,Arasp,Unknown,,,Brassicaceae
+50,Aralia nudicaulis,F,Perennial,Non-legume forb,C3,667,Aralnudi,Aranu,Native,29376,Aralia nudicaulis,Araliaceae
+51,Arenaria lateriflora,F,Perennial,Non-legume forb,C3,576,Arenlate,Arela,Native,509055,Arenaria lateriflora,Caryophyllaceae
+52,Aristida basiramea,C4,Annual,Grass,C4,123,Arisbasi,Ariba,Native,41412,Aristida basiramea,Poaceae
+53,Aristida sp.,C4,Annual,Grass,C4,138,Aristisp,Arisp,Unknown,,,Poaceae
+54,Aristida tuberculosa,C4,Annual,Grass,C4,154,Aristube,Aritu,Native,41436,Aristida tuberculosa,Poaceae
+55,Aronia melanocarpa,W,Perennial,Woody,C3,353,Aronmela,Arome,Native,25127,Aronia melanocarpa,Rosaceae
+56,Artemisia (caudata) campestris,F,Biennial,Non-legume forb,C3,507,Artecaud,Artca,Native,183748,Artemisia campestris,Asteraceae
+57,Artemisia ludoviciana,F,Perennial,Non-legume forb,C3,508,Arteludo,Artlu,Native,35474,Artemisia ludoviciana,Asteraceae
+58,Artemisia sp.,F,Unknown,Non-legume forb,C3,772,Artemisp,Artsp,Native and/or Introduced,,,Asteraceae
+59,Asclepias exaltata,F,Perennial,Non-legume forb,,1019,Asclexal,Ascex,Native,,,Asclepiadaceae
+60,Asclepias incarnata,F,Perennial,Non-legume forb,C3,500,Asclinca,Ascin,Native,30241,Asclepias incarnata,Asclepiaceae
+61,Asclepias ovalifolia,F,Perennial,Non-legume forb,C3,577,Ascloval,Ascov,Native,30291,Asclepias ovalifolia,Asclepiaceae
+62,Asclepias sp.,F,Perennial,Non-legume forb,C3,609,Asclepsp,Ascsp,Unknown,,,Asclepiaceae
+63,Asclepias syriaca,F,Perennial,Non-legume forb,C3,509,Asclsyri,Ascsy,Native,30310,Asclepias syriaca,Asclepiaceae
+64,Asclepias tuberosa,F,Perennial,Non-legume forb,C3,510,Ascltube,Asctu,Native,30313,Asclepias tuberosa,Asclepiaceae
+65,Asclepias verticillata,F,Perennial,Non-legume forb,C3,621,Asclvert,Ascve,Native,30320,Asclepias verticillata,Asclepiaceae
+66,Asclepias viridiflora,F,Perennial,Non-legume forb,C3,782,Asclviri,Ascvi,Native,30322,Asclepias viridiflora,Asclepiaceae
+67,Asparagus officinalis,F,Perennial,Non-legume forb,C3,654,Aspaoffi,Aspof,Introduced,42784,Asparagus officinalis,Lilliaceae
+68,Aster azureus,F,Perennial,Non-legume forb,C3,512,Asteazur,Astaz,Native,35528,Aster azureus,Asteraceae
+69,Aster ericoides,F,Perennial,Non-legume forb,C3,511,Asteeric,Aster,Native,35564,Aster ericoides,Asteraceae
+70,Aster junciformis,F,Perennial,Non-legume forb,C3,632,Astejunc,Astju,Native,35596,Aster junciformis,Asteraceae
+71,Aster lanceolatus (var. simplex),F,Perennial,Non-legume forb,,1020,Astelanc,Astla,Native,,,Asteraceae
+72,Aster macrophyllus,F,Perennial,Non-legume forb,,1021,Astemacr,Astma,Native,,,Asteraceae
+73,Aster novae-angliae,F,Perennial,Non-legume forb,C3,722,Astenova,Astno,Native,35613,Aster novae-angliae,Asteraceae
+74,Aster ptarmicoides,F,Perennial,Non-legume forb,C3,723,Asteptar,Astpt,Native,509304,Aster ptarmicoides,Asteraceae
+75,Aster puniceus,F,Perennial,Non-legume forb,C3,702,Astepuni,Astpu,Native,35512,Aster puniceus,Asteraceae
+76,Aster simplex,F,Perennial,Non-legume forb,C3,643,Astesimp,Astsi,Native,35514,Aster simplex,Asteraceae
+77,Aster sp.,F,Perennial,Non-legume forb,C3,578,Astersp,Astsp,Native,,,Asteraceae
+78,Aster umbellatus,F,Perennial,Non-legume forb,C3,646,Asteumbe,Astum,Native,35671,Aster umbellatus,Asteraceae
+79,Astragalus canadensis,L,Perennial,Legume,C3,411,Astrcana,Astca,Native,25451,Astragalus canadensis,Fabaceae
+80,Athyrium angustum,O,Perennial,Fern,C3,14,Athyangu,Athan,Native,192161,Athyrium angustum,Aspleniaceae
+81,Baptisia leucantha,L,Perennial,Legume,C3,415,Baptleuc,Baple,Native,192833,Baptisia leucantha,Fabaceae
+82,Barbarea vulgaris,F,Annual,Non-legume forb,C3,774,Barbvulg,Barvu,Introduced,22741,Barbarea vulgaris,Brassicaceae
+83,Bare ground,NA,NA,NA,NA,0,Baregrou,Bargr,NA,,,NA
+84,Berteroa incana,F,Biennial,Non-legume forb,C3,513,Bertinca,Berin,Introduced,23052,Berteroa incana,Brassicaceae
+85,Betula allegheniensis,W,Perennial,Woody,,1005,Betualle,Betal,Native,,,Betulaceae
+86,Betula papyrifera,W,Perennial,Woody,C3,330,Betupapy,Betpa,Native,19489,Betula papyrifera,Betulaceae
+87,Betula pumila,W,Perennial,Woody,C3,331,Betupumi,Betpu,Native,19498,Betula pumila,Betulaceae
+88,Bidens cernua,F,Annual,Non-legume forb,C3,647,Bidecern,Bidce,Native,35710,Bidens cernua,Asteraceae
+89,Bidens coronata,F,Biennial,Non-legume forb,C3,648,Bidecoro,Bidco,Native,35706,Bidens coronata,Asteraceae
+90,Bidens sp.,F,Unknown,Non-legume forb,C3,669,Bidenssp,Bidsp,Unknown,,,Asteraceae
+91,Bidens tripartita,F,Annual,Non-legume forb,C3,649,Bidetrip,Bidtr,Introduced,35709,Bidens tripartita,Asteraceae
+92,Botrichium sp.,O,Perennial,Fern,C3,6,Botricsp,Botsp,Native,,Botrychium sp.,Ophioglossaceae
+93,Bouteloua curtipendula,C4,Perennial,Grass,C4,151,Boutcurt,Boucu,Native,41500,Bouteloua curtipendula,Poaceae
+94,Bouteloua gracilis,C4,Perennial,Grass,C4,139,Boutgrac,Bougr,Native,41493,Bouteloua gracilis,Poaceae
+95,Bouteloua hirsuta,C4,Perennial,Grass,C4,104,Bouthirs,Bouhi,Native,41502,Bouteloua hirsuta,Poaceae
+96,Bouteloua sp.,C4,Unknown,Grass,C4,163,Boutelsp,Bousp,Native and/or Introduced,,,Poaceae
+97,Bromus ciliatus,C3,Perennial,Grass,C3,156,Bromcili,Broci,Native,40496,Bromus ciliatus,Poaceae
+98,Bromus inermis,C3,Perennial,Grass,C3,105,Brominer,Broin,Introduced,40502,Bromus inermis,Poaceae
+99,Bromus kalmii,C3,Perennial,Grass,C3,161,Bromkalm,Broka,Native,40503,Bromus kalmii,Poaceae
+100,Bromus sp.,C3,Perennial,Grass,C3,124,Bromussp,Brosp,Introduced,,,Poaceae
+101,Bromus tectorum,C3,Perennial,Grass,C3,172,Bromtect,Brote,Introduced,40524,Bromus tectorum,Poaceae
+102,Buchloe dactyloides,C4,Perennial,Grass,C4,130,Buchdact,Bucda,Native,41533,Buchloe dactyloides,Poaceae
+103,Calamagrostis canadensis,C3,Perennial,Grass,C3,125,Calacana,Calca,Native,40544,Calamagrostis canadensis,Poaceae
+104,Calamagrostis inexpansa,C3,Perennial,Grass,C3,147,Calainex,Calin,Native,40551,Calamagrostis inexpansa,Poaceae
+105,Calamagrostis sp.,C3,Perennial,Grass,C3,157,Calamasp,Calsp,Unknown,,,Poaceae
+106,Calamovilfa longifolia,C4,Perennial,Grass,C4,126,Calalong,Callo,Native,41539,Calamovilfa longifolia,Poaceae
+107,Calamovilfa sp.,C4,Perennial,Grass,C4,127,Calamosp,Calsp,Native,,,Poaceae
+108,Caltha palustris,F,Perennial,Non-legume forb,C3,724,Caltpalu,Calpa,Native,18454,Caltha palustris,Ranunculaceae
+109,Campanula aparinoides,F,Perennial,Non-legume forb,C3,674,Campapar,Camap,Native,34476,Campanula aparinoides,Campanulaceae
+110,Campanula rotundifolia,F,Perennial,Non-legume forb,C3,579,Camprotu,Camro,Native,34497,Campanula rotundifolia,Campanulaceae
+111,Campanula sp.,F,Unknown,Non-legume forb,C3,748,Campansp,Camsp,Unknown,,,Campanulaceae
+112,Canopy cover,NA,NA,NA,NA,809,Canocove,Canco,NA,,,NA
+113,Capsella bursa-pastoris,F,Annual,Non-legume forb,C3,773,Capsburs,Capbu,Introduced,22766,Capsella bursa-pastoris,Brassicaceae
+114,Carex bebbii,S,Perennial,Sedge,C3,219,Carebebb,Carbe,Native,39520,Carex bebbii,Cyperaceae
+115,Carex bicknelli,S,Perennial,Sedge,,1023,Carebick,Carbi,Native,,,Cyperaceae
+116,Carex canescens,S,Perennial,Sedge,C3,203,Carecane,Carca,Native,39447,Carex canescens,Cyperaceae
+117,Carex cephalantha,S,Perennial,Sedge,C3,216,Careceph,Carce,Native,510172,Carex cephalantha,Cyperaceae
+118,Carex chordorrhiza,S,Perennial,Sedge,C3,204,Carechor,Carch,Native,39547,Carex chordorrhiza,Cyperaceae
+119,Carex comosa,S,Perennial,Sedge,C3,205,Carecomo,Carco,Native,39384,Carex comosa,Cyperaceae
+120,Carex diandra,S,Perennial,Sedge,C3,206,Caredian,Cardi,Native,39448,Carex diandra,Cyperaceae
+121,Carex disperma,S,Perennial,Sedge,C3,207,Caredisp,Cardi,Native,39577,Carex disperma,Cyperaceae
+122,Carex foenea,S,Perennial,Sedge,C3,201,Carefoen,Carfo,Native,39607,Carex foenea,Cyperaceae
+123,Carex gracillima,S,Perennial,Sedge,C3,220,Caregrac,Cargr,Native,39620,Carex gracillima,Cyperaceae
+124,Carex haydenii,S,Perennial,Sedge,C3,208,Carehayd,Carha,Native,39630,Carex haydenii,Cyperaceae
+125,Carex interior,S,Perennial,Sedge,C3,217,Careinte,Carin,Native,39652,Carex interior,Cyperaceae
+126,Carex lacustris,S,Perennial,Sedge,C3,209,Carelacu,Carla,Native,39409,Carex lacustris,Cyperaceae
+127,Carex lanuginosa,S,Perennial,Sedge,C3,210,Carelanu,Carla,Native,39458,Carex lanuginosa,Cyperaceae
+128,Carex lasiocarpa,S,Perennial,Sedge,C3,211,Carelasi,Carla,Native,39459,Carex lasiocarpa,Cyperaceae
+129,Carex muhlenbergii,S,Perennial,Sedge,C3,218,Caremuhl,Carmu,Native,39423,Carex muehlenbergii,Cyperaceae
+130,Carex oligosperma,S,Perennial,Sedge,C3,212,Careolig,Carol,Native,39729,Carex oligosperma,Cyperaceae
+131,Carex pensylvanicus,S,Perennial,Sedge,C3,202,Carepens,Carpe,Native,39749,Carex pensylvanica,Cyperaceae
+132,Carex rostrata,S,Perennial,Sedge,C3,213,Carerost,Carro,Native,39464,Carex rostrata,Cyperaceae
+133,Carex scoparia,S,Perennial,Sedge,C3,214,Carescop,Carsc,Native,39432,Carex scoparia,Cyperaceae
+134,Carex sp.,S,Perennial,Sedge,C3,200,Carexsp,Carsp,Native,,,Cyperaceae
+135,Carex stricta,S,Perennial,Sedge,C3,215,Carestri,Carst,Native,39435,Carex stricta,Cyperaceae
+136,Cassia fasciculata,L,Perennial,Legume,C3,421,Cassfasc,Casfa,Native,25736,Cassia fasciculata,Fabaceae
+137,Ceanothus americanus,W,Perennial,Woody,C3,325,Ceanamer,Ceaam,Native,28454,Ceanothus americanus,Rhamnaceae
+138,Celastrus scandens,W,Perennial,Woody,C3,341,Celascan,Celsc,Native,27974,Celastrus scandens,Celastraceae
+139,Cenchrus longispinus,C4,Annual,Grass,C4,106,Cenclong,Cenlo,Native,40570,Cenchrus longispinus,Poaceae
+140,Chamaedaphne calyculata,W,Perennial,Woody,C3,337,Chamcaly,Chaca,Native,23637,Chamaedaphne calyculata,Ericaceae
+141,Chenopodium album,F,Annual,Non-legume forb,C3,514,Chenalbu,Cheal,Introduced,20592,Chenopodium album,Chenopodiaceae
+142,Chenopodium hybridum,F,Annual,Non-legume forb,Cx,764,Chenhybr,Chehy,Native,20639,Chenopodium hybridum,Chenopodiaceae
+143,Chenopodium leptophyllum,F,Annual,Non-legume forb,C3,515,Chenlept,Chele,Native,20616,Chenopodium leptophyllum,Chenopodiaceae
+144,Chenopodium sp.,F,Unknown,Non-legume forb,C3,757,Chenopsp,Chesp,Unknown,,,Chenopodiaceae
+145,Chrysopsis villosa,F,Perennial,Non-legume forb,C3,516,Chryvill,Chrvi,Native,510984,Chrysopsis villosa,Asteraceae
+146,Cicuta bulbifera,F,Perennial,Non-legume forb,C3,676,Cicubulb,Cicbu,Native,29459,Cicuta bulbifera,Apiaceae
+147,Circaea lutetiana,F,Perennial,Non-legume forb,C3,781,Circlute,Cirlu,Native,27568,Circaea lutetiana,Onagraceae
+148,Circaea quadrisulcata,F,Perennial,Non-legume forb,,1024,Circquad,Cirqu,Native,,,Onagraceae
+149,Cirsium arvense,F,Perennial,Non-legume forb,C3,580,Cirsarve,Cirar,Introduced,36335,Cirsium arvense,Asteraceae
+150,Cirsium discolor,F,"Biennial, Perennial",Non-legume forb,C3,763,Cirsdisc,Cirdi,Native,36362,Cirsium discolor,Asteraceae
+151,Cirsium sp.,F,Perennial,Non-legume forb,C3,616,Cirsiusp,Cirsp,Unknown,,,Asteraceae
+152,Cladonia Lichens,O,Unknown,Moss & lichens,Unknown,1025,Cladlich,Clali,Unknown,,,Unknown
+153,Comandra richardsiana,F,Perennial,Non-legume forb,C3,581,Comarich,Comri,Native,511249,Comandra richardsiana,Santalaceae
+154,Comandra umbellata,F,Perennial,Non-legume forb,,1026,Comaumbe,Comum,Native,,,Santalaceae
+155,Convolvulus arvensis,F,Perennial,Non-legume forb,C3,517,Convarve,Conar,Introduced,30705,Convolvulus arvensis,Convolvulaceae
+156,Conyza canadensis,F,"Annual, biennial",Non-legume forb,,1027,Conycana,Conca,Native,,,Asteraceae
+157,Coreopsis palmata,F,Perennial,Non-legume forb,C3,518,Corepalm,Corpa,Native,37148,Coreopsis palmata,Asteraceae
+158,Corn litter,NA,NA,NA,NA,90,Cornlitt,Corli,NA,,,NA
+159,Cornus alternifolia,W,Perennial,Woody,C3,379,Cornalte,Coral,Native,,,Cornaceae
+160,Cornus racemosa,W,Perennial,Woody,C3,339,Cornrace,Corra,Native,501635,Cornus racemosa,Cornaceae
+161,Cornus sp.,W,Perennial,Woody,C3,340,Cornussp,Corsp,Unknown,,,Cornaceae
+162,Cornus stolonifera,W,Perennial,Woody,C3,322,Cornstol,Corst,Native,27818,Cornus stolonifera,Cornaceae
+163,Corylus americanus,W,Perennial,Woody,C3,313,Coryamer,Coram,Native,19506,Corylus americana,Betulaceae
+164,Cotyledons,Unknown,Unknown,Unknown,Unknown,810,Cotyled,Cotyl,Unknown,,,Unknown
+165,Crepis tectorum,F,Annual,Non-legume forb,C3,519,Creptect,Crete,Introduced,37212,Crepis tectorum,Asteraceae
+166,Cryptogams,O,Unknown,Moss & lichens,Unknown,50,Cryptog,Crypt,Unknown,,,Unknown
+167,Cycloloma atriplicifolium,F,Annual,Non-legume forb,Cx,765,Cyclatri,Cycat,Native,20685,Cycloloma atriplicifolium,Chenopodiaceae
+168,Cyperus filiculmis,S,Perennial,Sedge,C4,230,Cypefili,Cypfi,Native,39890,Cyperus filiculmis,Cyperaceae
+169,Cyperus schweinitzii,S,Perennial,Sedge,C4,232,Cypeschw,Cypsc,Native,39963,Cyperus schweinitzii,Cyperaceae
+170,Cyperus sp.,S,Perennial,Sedge,C4,231,Cyperusp,Cypsp,Native,,,Cyperaceae
+171,Cyperus strigosus,S,Perennial,Sedge,C4,233,Cypestri,Cypst,Native,39901,Cyperus strigosus,Cyperaceae
+172,Danthonia spicata,C3,Perennial,Grass,C3,162,Dantspic,Dansp,Native,41642,Danthonia spicata,Poaceae
+173,Delphinium virescens,F,Perennial,Non-legume forb,C3,520,Delpvire,Delvi,Native,18524,Delphinium virescens,Ranunculaceae
+174,Desmodium canadense,L,Perennial,Legume,C3,407,Desmcana,Desca,Native,25791,Desmodium canadense,Fabaceae
+175,Desmodium glutinosum,L,Perennial,Legume,C3,783,Desmglut,Desgl,Native,25800,Desmodium glutinosum,Fabaceae
+176,Digitaria ischaemum,C4,Annual,Grass,C4,135,Digiisch,Digis,Introduced,40637,Digitaria ischaemum,Poaceae
+177,Digitaria sanguinalis,C4,Annual,Grass,C4,129,Digisang,Digsa,Introduced,40604,Digitaria sanguinalis,Poaceae
+178,Digitaria sp.,C4,Annual,Grass,C4,164,Digitasp,Digsp,Unknown,,,Poaceae
+179,Disturbance,NA,NA,NA,NA,805,Disturb,Distu,Unknown,,,NA
+180,Dryopteris cristata,O,Perennial,Fern,C3,8,Dryocris,Drycr,Native,17531,Dryopteris cristata,Aspleniaceae
+181,Dryopteris spinulosa,O,Perennial,Fern,C3,1028,Dryospin,Drysp,Native,,,Dryopteridaceae
+182,Dulichium arundinaceum,S,Perennial,Sedge,C3,234,Duliarun,Dular,Native,40009,Dulichium arundinaceum,Cyperaceae
+183,Echinacea purpurea,F,Perennial,Non-legume forb,C3,725,Echipurp,Echpu,Native,37281,Echinacea purpurea,Asteraceae
+184,Eleocharis sp.,S,Unknown,Sedge,C3,235,Eleochsp,Elesp,Native and/or Introduced,,,Cyperaceae
+185,Elymus canadensis,C3,Perennial,Grass,C3,140,Elymcana,Elyca,Native,40683,Elymus canadensis,Poaceae
+186,Elymus trachycaulus,G,Perennial,Grass,,1029,Elymtrac,Elytr,Native,,,Poaceae
+187,Epilobium angustifolium,F,Perennial,Non-legume forb,C3,726,Epilangu,Epian,Native,27284,Epilobium angustifolium,Onagraceae
+188,Epilobium ciliatum,F,Perennial,Non-legume forb,C3,709,Epilcili,Epici,Native,27293,Epilobium ciliatum,Onagraceae
+189,Epilobium glandulosum,F,Perennial,Non-legume forb,C3,767,Epilglan,Epigl,Native,512918,Epilobium glandulosum,Onagraceae
+190,Epilobium leptophyllum,F,Perennial,Non-legume forb,C3,677,Epillept,Epile,Native,27311,Epilobium leptophyllum,Onagraceae
+191,Epilobium sp.,F,Unknown,Non-legume forb,C3,678,Epilobsp,Episp,Native and/or Introduced,,,Onagraceae
+192,Equisetum arvense,O,Perennial,Horsetail,C3,7,Equiarve,Equar,Native,17152,Equisetum arvense,Equisetaceae
+193,Equisetum hyemale,O,Perennial,Horsetail,C3,18,Equihyem,Equhy,Native,17154,Equisetum hyemale,Equisetaceae
+194,Equisetum laevigatum,O,Perennial,Horsetail,C3,1,Equilaev,Equla,Native,17156,Equisetum laevigatum,Equisetaceae
+195,Equisetum sp.,O,Perennial,Horsetail,C3,16,Equisesp,Equsp,Native,,,Equisetaceae
+196,Eragrostis spectabilis,C4,Perennial,Grass,C4,107,Eragspec,Erasp,Native,40717,Eragrostis spectabilis,Poaceae
+197,Eragrostis trichodes,C4,Perennial,Grass,C4,171,Eragtric,Eratr,Native,40768,Eragrostis trichodes,Poaceae
+198,Erechtites hieracifolia,F,Annual,Non-legume forb,C3,679,Erechier,Erehi,Native,505920,Erechtites hieracifolia,Asteraceae
+199,Erigeron anuus,F,Annual,Non-legume forb,C3,635,Eriganuu,Erian,Native,35804,Erigeron annuus,Asteraceae
+200,Erigeron canadensis,F,Annual,Non-legume forb,C3,521,Erigcana,Erica,Introduced,196266,Erigeron canadensis,Asteraceae
+201,Erigeron sp.,F,Annual,Non-legume forb,C3,619,Erigersp,Erisp,Unknown,,,Asteraceae
+202,Erigeron strigosus,F,Annual,Non-legume forb,C3,522,Erigstri,Erist,Native,35951,Erigeron strigosus,Asteraceae
+203,Eupatorium maculatum,F,Perennial,Non-legume forb,C3,627,Eupamacu,Eupma,Native,502517,Eupatorium maculatum,Asteraceae
+204,Eupatorium perfoliatum,F,Perennial,Non-legume forb,C3,681,Eupaperf,Euppe,Native,35980,Eupatorium perfoliatum,Asteraceae
+205,Eupatorium rugosum,F,Perennial,Non-legume forb,,1030,Euparugo,Eupru,Native,,,Asteraceae
+206,Euphorbia (supina) maculata,F,Annual,Non-legume forb,C4,525,Euphsupi,Eupsu,Native,565768,Euphorbia maculata,Euphorbiaceae
+207,Euphorbia corollata,F,Perennial,Non-legume forb,C3,523,Euphcoro,Eupco,Native,28057,Euphorbia corollata,Euphorbiaceae
+208,Euphorbia geyeri,F,Annual,Non-legume forb,C4,706,Euphgeye,Eupge,Native,28073,Euphorbia geyeri,Euphorbiaceae
+209,Euphorbia glyptosperma,F,Annual,Non-legume forb,C4,524,Euphglyp,Eupgl,Native,28074,Euphorbia glyptosperma,Euphorbiaceae
+210,Euphorbia sp.,F,Annual,Non-legume forb,Cx,583,Euphorsp,Eupsp,Unknown,,,Euphorbiaceae
+211,Euthamia graminifolia,F,Perennial,Non-legume forb,,1031,Euthgram,Eutgr,Native,,,Asteraceae
+212,Festuca ovina,C3,Perennial,Grass,C3,170,Festovin,Fesov,Introduced,565873,Festuca ovina,Poaceae
+213,Festuca rubra,C3,Perennial,Grass,C3,169,Festrubr,Fesru,Introduced,40796,Festuca rubra,Poaceae
+214,Festuca sp.,C3,Perennial,Grass,C3,167,Festucsp,Fessp,Unknown,,,Poaceae
+215,Forb seedlings,F,Unknown,Forb,Unknown,808,Forbseed,Forse,Unknown,,,Unknown
+216,Forbs,F,Unknown,Non-legume forb,,940,Forbs,Forbs,Unknown,,,Unknown
+217,Fragaria sp.,F,Perennial,Non-legume forb,C3,710,Fragarsp,Frasp,Unknown,,,Rosaceae
+218,Fragaria vesca (americana),F,Perennial,Non-legume forb,C3,625,Fragvesc,Frave,Native,513637,Fragaria americana,Rosaceae
+219,Fragaria virginiana,F,Perennial,Non-legume forb,C3,526,Fragvirg,Fravi,Native,24639,Fragaria virginiana,Rosaceae
+220,Fraxinus americana,W,Perennial,Woody,,1004,Fraxamer,Fraam,Native,,,Oleaceae
+221,Fraxinus nigra,W,Perennial,Woody,C3,366,Fraxnigr,Frani,Native,32945,Fraxinus nigra,Oleaceae
+222,Fraxinus pennsylvanica,W,Perennial,Woody,C3,329,Fraxpenn,Frape,Native,32929,Fraxinus pennsylvanica,Oleaceae
+223,Fruits & seeds,Unknown,Unknown,Unknown,Unknown,802,Fruiseed,Fruit,Unknown,,,Unknown
+224,Fungi,O,Unknown,Fungi,NA,97,Fungi,Fungi,Unknown,,,Unknown
+225,Galium aparine,F,Annual,Non-legume forb,C3,665,Galiapar,Galap,Native,34797,Galium aparine,Rubiaceae
+226,Galium boreale,F,Perennial,Non-legume forb,C3,527,Galibore,Galbo,Native,565204,Galium boreale,Rubiaceae
+227,Galium sp.,F,Perennial,Non-legume forb,C3,644,Galiumsp,Galsp,Native,,,Rubiaceae
+228,Galium trifidum,F,Perennial,Non-legume forb,C3,711,Galitrif,Galtr,Native,34806,Galium trifidum,Rubiaceae
+229,Galium triflorum,F,Perennial,Non-legume forb,C3,657,Galitri2,Galtr,Native,34933,Galium triflorum,Rubiaceae
+230,Gentiana andrewsii,F,Perennial,Non-legume forb,C3,727,Gentandr,Genan,Native,29967,Gentiana andrewsii,Gentianaceae
+231,Geranium maculatum,F,Perennial,Non-legume forb,C3,682,Geramacu,Germa,Native,29107,Geranium maculatum,Geraniaceae
+232,Glechoma hederacea,F,Perennial,Non-legume forb,,1032,Glechede,Glehe,Introduced,,,Lamiaceae
+233,Glyceria grandis,C3,Perennial,Grass,C3,150,Glycgran,Glygr,Native,502812,Glyceria grandis,Poaceae
+234,Glyceria sp.,C3,Perennial,Grass,C3,155,Glycersp,Glysp,Unknown,,,Poaceae
+235,Gnaphalium obtusifolium,F,Biennial,Non-legume forb,C3,528,Gnapobtu,Gnaob,Native,36694,Gnaphalium obtusifolium,Asteraceae
+236,Gnaphalium sp.,F,Biennial,Non-legume forb,C3,641,Gnaphasp,Gnasp,Unknown,,,Asteraceae
+237,Gnaphalium uliginosum,F,Annual,Non-legume forb,,1033,Gnapulig,Gnaul,Introduced,,,Asteraceae
+238,Grass seedlings,G,Unknown,Grass,Unknown,807,Grasseed,Grase,Unknown,,,Poaceae
+239,Grasses,G,Unknown,Grass,Unknown,920,Grasses,Grass,Unknown,,,Poaceae
+240,Green matter (alive),Unknown,Unknown,Unknown,Unknown,800,Greematt,Grema,Unknown,,,Unknown
+241,Gymnocarpium dryopteris,O,Perennial,Fern,C3,17,Gymndryo,Gymdr,Native,17579,Gymnocarpium dryopteris,Aspleniaceae
+242,Habenaria lacera,F,Perennial,Non-legume forb,C3,747,Habelace,Habla,Native,43401,Habenaria lacera,Orchidaceae
+243,Hackelia americana,F,"Annual, biennial, perennial",Non-legume forb,,1034,Hackamer,Hacam,Native,,,Boraginaceae
+244,Hedeoma hispida,F,Annual,Non-legume forb,C3,529,Hedehisp,Hedhi,Native,502890,Hedeoma hispida,Lamiaceae
+245,Helenium autumnale,F,Perennial,Non-legume forb,C3,728,Heleautu,Helau,Native,36006,Helenium autumnale,Asteraceae
+246,Helianthemum bicknellii,F,Perennial,Non-legume forb,C3,530,Helibick,Helbi,Native,22259,Helianthemum bicknellii,Cistaceae
+247,Helianthus giganteus,F,Perennial,Non-legume forb,C3,653,Heligiga,Helgi,Native,36612,Helianthus giganteus,Asteraceae
+248,Helianthus hirsutus,F,Perennial,Non-legume forb,C3,584,Helihirs,Helhi,Native,36646,Helianthus hirsutus,Asteraceae
+249,Helianthus laetiflorus,F,Perennial,Non-legume forb,C3,531,Helilaet,Hella,Native,502924,Helianthus laetiflorus,Asteraceae
+250,Helianthus petiolaris,F,Annual,Non-legume forb,C3,729,Helipeti,Helpe,Native,36671,Helianthus petiolaris,Asteraceae
+251,Helianthus sp.,F,Perennial,Non-legume forb,C3,585,Heliansp,Helsp,Unknown,,,Asteraceae
+252,Heliopsis helianthoides,F,Perennial,Non-legume forb,C3,730,Heliheli,Helhe,Native,37605,Heliopsis helianthoides,Asteraceae
+253,Heuchera richardsonii,F,Perennial,Non-legume forb,C3,731,Heucrich,Heuri,Native,24372,Heuchera richardsonii,Saxifragaceae
+254,Hieracium aurantiacum,F,Perennial,Non-legume forb,C3,769,Hieraura,Hieau,Introduced,37697,Hieracium aurantiacum,Asteraceae
+255,Hieracium kalmii,F,Perennial,Non-legume forb,C3,675,Hierkalm,Hieka,Native,503023,Hieracium kalmii,Asteraceae
+256,Hieracium longipilum,F,Biennial,Non-legume forb,C3,607,Hierlong,Hielo,Native,37714,Hieracium longipilum,Asteraceae
+257,Hieracium sp.,F,Biennial,Non-legume forb,C3,612,Hieracsp,Hiesp,Unknown,,,Asteraceae
+258,Hierochloe odorata,C3,Perennial,Grass,C3,158,Hierodor,Hieod,Native,565874,Hierochloe odorata,Poaceae
+259,Houstonia longifolia,F,Perennial,Non-legume forb,C3,732,Houslong,Houlo,Native,35045,Houstonia longifolia,Rubiaceae
+260,Hypericum majus,F,Annual,Non-legume forb,C3,684,Hypemaju,Hypma,Native,21446,Hypericum majus,Clusiaceae
+261,Hypoxis hirsuta,F,Perennial,Non-legume forb,C4,532,Hypohirs,Hyphi,Native,503146,Hypoxis hirsuta,Lilliaceae
+262,Ilex sp.,W,Perennial,Woody,C3,369,Ilexsp,Ilesp,Unknown,,,Aquifoliaceae
+263,Ilex verticillata,W,Perennial,Woody,C3,346,Ilexvert,Ileve,Native,27985,Ilex verticillata,Aquifoliaceae
+264,Impatiens capensis,F,Annual,Non-legume forb,C3,685,Impacape,Impca,Native,29182,Impatiens capensis,Balsaminaceae
+265,Introduced,Unknown,Unknown,Unknown,Unknown,999,Introdu,Intro,Introduced,,,Unknown
+266,Iris versicolor,F,Perennial,Non-legume forb,C3,712,Irisvers,Irive,Native,43196,Iris versicolor,Iridaceae
+267,Juncus sp.,S,Perennial,Sedge,C3,240,Juncussp,Junsp,Unknown,,,Cyperaceae
+268,Juncus tenuis,S,Perennial,Sedge,C3,241,Junctenu,Junte,Native,39243,Juncus tenuis,Cyperaceae
+269,Juniperus communis,W,Perennial,Woody,C3,347,Junicomm,Junco,Native,194820,Juniperus communis,Cupressaceae
+270,Juniperus sp.,W,Perennial,Woody,C3,373,Junipesp,Junsp,Unknown,,,Cupressaceae
+271,Juniperus virginiana,W,Perennial,Woody,C3,372,Junivirg,Junvi,Native,18048,Juniperus virginiana,Cupressaceae
+272,Koeleria cristata,C3,Perennial,Grass,C3,145,Koelcris,Koecr,Native,515476,Koeleria cristata,Poaceae
+273,Krigia biflora,F,Perennial,Non-legume forb,C3,780,Krigbifl,Kribi,Native,37810,Krigia biflora,Asteraceae
+274,Lactuca biennis,F,Biennial,Non-legume forb,C3,671,Lactbien,Lacbi,Native,36597,Lactuca biennis,Asteraceae
+275,Lactuca canadensis,F,Biennial,Non-legume forb,C3,534,Lactcana,Lacca,Native,36596,Lactuca canadensis,Asteraceae
+276,Lactuca serriola (scariola),F,Biennial,Non-legume forb,C3,615,Lactserr,Lacse,Introduced,36608,Lactuca serriola,Asteraceae
+277,Lactuca sp.,F,Biennial,Non-legume forb,C3,634,Lactucsp,Lacsp,Unknown,,,Asteraceae
+278,Larix laricina,W,Perennial,Woody,C3,380,Larilari,Larla,Native,,,Pinaceae
+279,Lathyrus ochroleucus,L,Perennial,Legume,C3,1035,Lathochr,Latoc,Native,,,Fabaceae
+280,Lathyrus venosus,L,Perennial,Legume,C3,402,Lathveno,Latve,Native,25886,Lathyrus venosus,Fabaceae
+281,Leaves,Unknown,Unknown,Unknown,Unknown,804,Leaves,Leave,Unknown,,,Unknown
+282,Lechea stricta,F,Perennial,Non-legume forb,C3,535,Lechstri,Lecst,Native,22297,Lechea stricta,Cistaceae
+283,Leersia oryzoides,C3,Perennial,Grass,C3,146,Leeroryz,Leeor,Native,40886,Leersia oryzoides,Poaceae
+284,Lemna sp.,F,Annual,Non-legume forb,C3,755,Lemnasp,Lemsp,Native,,,Lemnaceae
+285,Lepidium densiflorum,F,Annual,Non-legume forb,C3,536,Lepidens,Lepde,Native,22960,Lepidium densiflorum,Brassicaceae
+286,Lepidium sp.,F,Unknown,Non-legume forb,C3,758,Lepidisp,Lepsp,Native and/or Introduced,,,Brassicaceae
+287,Lepidium virginicum,F,Annual,Non-legume forb,C3,537,Lepivirg,Lepvi,Native,22955,Lepidium virginicum,Brassicaceae
+288,Leptoloma cognatum,C4,Perennial,Grass,C4,168,Leptcogn,Lepco,Native,41830,Leptoloma cognatum,Poaceae
+289,Lespedeza capitata,L,Perennial,Legume,C3,403,Lespcapi,Lesca,Native,25897,Lespedeza capitata,Fabaceae
+290,Liatris aspera,F,Perennial,Non-legume forb,C3,538,Liataspe,Liaas,Native,37909,Liatris aspera,Asteraceae
+291,Liatris ligulistylis,F,Perennial,Non-legume forb,C3,733,Liatligu,Liali,Native,37929,Liatris ligulistylis,Asteraceae
+292,Liatris pycnostachya,F,Perennial,Non-legume forb,C3,734,Liatpycn,Liapy,Native,37937,Liatris pycnostachya,Asteraceae
+293,Lichens,O,Unknown,Moss & lichens,Unknown,96,Lichens,Liche,Unknown,,,Unknown
+294,Liliaceae unknown,F,Unknown,Non-legume forb,Unknown,1036,Liliaceae,Lilia,Unknown,,,Lilliaceae
+295,Linaria vulgaris,F,Perennial,Non-legume forb,C3,636,Linavulg,Linvu,Introduced,33216,Linaria vulgaris,Scrophulariaceae
+296,Lithospermum canescens,F,Perennial,Non-legume forb,C3,539,Lithcane,Litca,Native,31945,Lithospermum canescens,Boraginaceae
+297,Lithospermum caroliniense,F,Perennial,Non-legume forb,C3,540,Lithcaro,Litca,Native,31946,Lithospermum caroliniense,Boraginaceae
+298,Lithospermum sp.,F,Perennial,Non-legume forb,C3,620,Lithossp,Litsp,Unknown,,,Boraginaceae
+299,Lobelia siphilitica,F,Perennial,Non-legume forb,C3,735,Lobesiph,Lobsi,Native,34531,Lobelia siphilitica,Campanulaceae
+300,Lobelia spicata,F,Perennial,Non-legume forb,C3,628,Lobespic,Lobsp,Native,34532,Lobelia spicata,Campanulaceae
+301,Lolium multiflorum,C3,Annual,Grass,C3,173,Lolimult,Lolmu,Introduced,40892,Lolium multiflorum,Poaceae
+302,Lonicera dioica,W,Perennial,Woody,C3,378,Lonidioi,Londi,Native,35290,Lonicera dioica,Caprifoliaceae
+303,Lonicera tatarica,W,Perennial,Woody,C3,343,Lonitata,Lonta,Introduced,35306,Lonicera tatarica,Caprifoliaceae
+304,Ludwigia polycarpa,F,Perennial,Non-legume forb,C3,756,Ludwpoly,Ludpo,Native,27361,Ludwigia polycarpa,Onagraceae
+305,Lupinus perennis,L,Perennial,Legume,C3,417,Lupipere,Luppe,Native,26091,Lupinus perennis,Fabaceae
+306,Lupinus sp.,L,Unknown,Legume,C3,420,Lupinusp,Lupsp,Unknown,,,Fabaceae
+307,Lychnis alba,F,Perennial,Non-legume forb,C3,541,Lychalba,Lycal,Introduced,516470,Lychnis alba,Caryophyllaceae
+308,Lycopodium complanatum,F,Perennial,Non-legume forb,,1037,Lycocomp,Lycco,Native,,,Lycopodiaceae
+309,Lycopus americana,F,Perennial,Non-legume forb,C3,686,Lycoamer,Lycam,Native,32254,Lycopus americanus,Lamiaceae
+310,Lycopus sp.,F,Perennial,Non-legume forb,C3,746,Lycopusp,Lycsp,Unknown,,,Lamiaceae
+311,Lycopus uniflorus,F,Perennial,Non-legume forb,C3,688,Lycounif,Lycun,Native,32257,Lycopus uniflorus,Lamiaceae
+312,Lysimachia ciliata,F,Perennial,Non-legume forb,C3,704,Lysicili,Lysci,Native,23984,Lysimachia ciliata,Primulaceae
+313,Lysimachia thyrsiflora,F,Perennial,Non-legume forb,C3,689,Lysithyr,Lysth,Native,24000,Lysimachia thyrsiflora,Primulaceae
+314,Maianthemum canadense,F,Perennial,Non-legume forb,C3,703,Maiacana,Maica,Native,503653,Maianthemum canadense,Lilliaceae
+315,Man made object,NA,NA,NA,NA,1022,NA,NA,NA,,,NA
+316,Medicago lupulina,L,Annual,Legume,C3,414,Medilupu,Medlu,Introduced,503721,Medicago lupulina,Fabaceae
+317,Medicago sativa,L,Perennial,Legume,C3,419,Medisati,Medsa,Introduced,183623,Medicago sativa,Fabaceae
+318,Medicago sp.,L,Unknown,Legume,C3,422,Medicasp,Medsp,Introduced,,,Fabaceae
+319,Melilotus alba,L,Biennial,Legume,C3,587,Melialba,Melal,Introduced,26149,Melilotus alba,Fabaceae
+320,Melilotus officinalis,L,Biennial,Legume,C3,588,Melioffi,Melof,Introduced,26150,Melilotus officinalis,Fabaceae
+321,Melilotus sp.,L,Biennial,Legume,C3,589,Melilosp,Melsp,Introduced,,,Fabaceae
+322,Mimulus ringens,F,Perennial,Non-legume forb,C3,760,Mimuring,Mimri,Native,33235,Mimulus ringens,Scrophulariaceae
+323,Mirabilis hirsuta,F,Perennial,Non-legume forb,C3,683,Mirahirs,Mirhi,Native,19647,Mirabilis hirsuta,Nyctaginaceae
+324,Mirabilis nyctaginea,F,Perennial,Non-legume forb,C3,776,Miranyct,Mirny,Native,19655,Mirabilis nyctaginea,Nyctaginaceae
+325,Miscellaneous forb,F,Perennial,Non-legume forb,C3,787,Miscforb,Misfo,Unknown,,,Unknown
+326,Miscellaneous grasses,G,Unknown,Grass,Unknown,199,Miscgras,Misgr,Unknown,,,Poaceae
+327,Miscellaneous grasses 2,G,Unknown,Grass,Unknown,197,Miscgra2,Misg2,Unknown,,,Poaceae
+328,Miscellaneous herbs,F,Unknown,Non-legume forb,Unknown,699,Mischerb,Mishe,Unknown,,,Unknown
+329,Miscellaneous herbs 2,F,Unknown,Non-legume forb,Unknown,786,Mischer2,Mish2,Unknown,,,Unknown
+330,Miscellaneous legumes,L,Unknown,Legume,C3,499,Misclegu,Misle,Unknown,,,Fabaceae
+331,Miscellaneous litter,NA,NA,NA,NA,99,Misclitt,Misli,NA,,,NA
+332,Miscellaneous rushes,S,Unknown,Sedge,Unknown,198,Miscrush,Misru,Unknown,,,Cyperaceae
+333,Miscellaneous sedges,S,Unknown,Sedge,Unknown,299,Miscsedg,Misse,Unknown,,,Cyperaceae
+334,Miscellaneous sp.,Unknown,Unknown,Unknown,Unknown,98,Miscelsp,Missp,Unknown,,,Unknown
+335,Miscellaneous woody plants,W,Perennial,Woody,C3,399,Miscwood,Miswo,Unknown,,,Unknown
+336,Mollugo verticillata,F,Annual,Non-legume forb,C4,590,Mollvert,Molve,Introduced,19899,Mollugo verticillata,Molluginaceae
+337,Monarda fistulosa,F,Perennial,Non-legume forb,C3,533,Monafist,Monfi,Native,565311,Monarda fistulosa,Lamiaceae
+338,Monarda punctata,F,Perennial,Non-legume forb,C3,736,Monapunc,Monpu,Native,32279,Monarda punctata,Lamiaceae
+339,Mosses,O,Unknown,Moss & lichens,Unknown,95,Mosses,Mosse,Unknown,,,Unknown
+340,Mosses & lichens,O,Unknown,Moss & lichens,Unknown,3,Mosslich,Mosli,Unknown,,,Unknown
+341,Mosses & lichens 2,O,Unknown,Moss & lichens,Unknown,2,Mosslic2,Mosl2,Unknown,,,Unknown
+342,Muhlenbergia racemosa,C4,Perennial,Grass,C4,128,Muhlrace,Muhra,Native,41935,Muhlenbergia racemosa,Poaceae
+343,Native,Unknown,Unknown,Unknown,Unknown,992,Native,Nativ,Native,,,Unknown
+344,Nepeta cataria,F,Perennial,Non-legume forb,C3,672,Nepecata,Nepca,Introduced,32623,Nepeta cataria,Lamiaceae
+345,Non-vascular,Unknown,Unknown,Unknown,Unknown,906,Nonvascu,Nonva,NA,,,Unknown
+346,Oenothera biennis,F,Biennial,Non-legume forb,C3,542,Oenobien,Oenbi,Native,27368,Oenothera biennis,Onagraceae
+347,Oenothera parviflora,F,Biennial,Non-legume forb,C3,629,Oenoparv,Oenpa,Native,504007,Oenothera parviflora,Onagraceae
+348,Oenothera rhombipetala,F,Biennial,Non-legume forb,C3,633,Oenorhom,Oenrh,Native,565330,Oenothera rhombipetala,Onagraceae
+349,Oenothera sp.,F,Biennial,Non-legume forb,C3,637,Oenothsp,Oensp,Unknown,,,Onagraceae
+350,Onoclea sensibilis,O,Perennial,Fern,C3,9,Onocsens,Onose,Native,17637,Onoclea sensibilis,Aspleniaceae
+351,Osmunda cinnamomea,O,Perennial,Fern,C3,10,Osmucinn,Osmci,Native,17219,Osmunda cinnamomea,Osmundaceae
+352,Osmunda claytonii,O,Perennial,Fern,C3,11,Osmuclay,Osmcl,Native,17220,Osmunda claytoniana,Osmundaceae
+353,Osmunda regalis,O,Perennial,Fern,C3,12,Osmurega,Osmre,Native,17218,Osmunda regalis,Osmundaceae
+354,Oxalis sp.,F,Perennial,Non-legume forb,C3,640,Oxalissp,Oxasp,Unknown,,,Oxalidaceae
+355,Oxalis stricta,F,Perennial,Non-legume forb,C3,631,Oxalstri,Oxast,Native,29095,Oxalis stricta,Oxalidaceae
+356,Oxybaphus hirsutus,F,Perennial,Non-legume forb,C3,592,Oxybhirs,Oxyhi,Native,518054,Oxybaphus hirsutus,Nyctaginaceae
+357,Oxybaphus nyctaginea,F,Perennial,Non-legume forb,C3,778,Oxybnyct,Oxyny,Native,19655,Mirabilis nyctaginea,Nyctaginaceae
+358,Panicum capillare,C4,Annual,Grass,C4,109,Panicapi,Panca,Native,40914,Panicum capillare,Poaceae
+359,Panicum lanuginosum,C3,Perennial,Grass,C3,110,Panilanu,Panla,Native,565867,Panicum lanuginosum,Poaceae
+360,Panicum leibergi,C3,Perennial,Grass,C3,141,Panileib,Panle,Native,518307,Panicum leibergii,Poaceae
+361,Panicum miliaceum,G,Annual,Grass,Cx,160,Panimili,Panmi,Introduced,40946,Panicum miliaceum,Poaceae
+362,Panicum oligosanthes,C3,Perennial,Grass,C3,111,Paniolig,Panol,Native,40912,Panicum oligosanthes,Poaceae
+363,Panicum perlongum,C3,Perennial,Grass,C3,112,Paniperl,Panpe,Native,518351,Panicum perlongum,Poaceae
+364,Panicum praecocious,C3,Perennial,Grass,C3,113,Paniprae,Panpr,Native,518358,Panicum praecocius,Poaceae
+365,Panicum sp.,G,Perennial,Grass,Cx,131,Panicusp,Pansp,Native,,,Poaceae
+366,Panicum virgatum,C4,Perennial,Grass,C4,114,Panivirg,Panvi,Native,40913,Panicum virgatum,Poaceae
+367,Parietaria pensylvanica,F,Annual,Non-legume forb,,1038,Paripens,Parpe,Native,,,Urticaceae
+368,Parthenocissus inserta,W,Perennial,Woody,C3,306,Partinse,Parin,Native,518483,Parthenocissus inserta,Vitaceae
+369,Parthenocissus quinquefolia,O,Perennial,Vine,,1039,Partquin,Parqu,Native,,,Vitaceae
+370,Parthenocissus sp.,W,Perennial,Woody,C3,345,Parthesp,Parsp,Native,,,Vitaceae
+371,Parthenocissus vitacea,O,Perennial,Vine,,1008,Partvita,Parvi,Native,,,Vitaceae
+372,Paspalum ciliatifolium,C4,Perennial,Grass,C4,159,Paspcili,Pasci,Native,40991,Paspalum ciliatifolium,Poaceae
+373,Pedicularis canadensis,F,Perennial,Non-legume forb,C3,750,Pedicana,Pedca,Native,33362,Pedicularis canadensis,Scrophulariaceae
+374,Pedicularis sp.,F,Perennial,Non-legume forb,C3,666,Pedicusp,Pedsp,Unknown,,,Scrophulariaceae
+375,Penstemon digitalis,F,Perennial,Non-legume forb,C3,737,Pensdigi,Pendi,Native,33881,Penstemon digitalis,Scrophulariaceae
+376,Penstemon gracilis,F,Perennial,Non-legume forb,C3,543,Pensgrac,Pengr,Native,33909,Penstemon gracilis,Scrophulariaceae
+377,Penstemon grandiflorus,F,Perennial,Non-legume forb,C3,544,Pensgran,Pengr,Native,33912,Penstemon grandiflorus,Scrophulariaceae
+378,Penstemon sp.,F,Perennial,Non-legume forb,C3,759,Penstesp,Pensp,Unknown,,,Scrophulariaceae
+379,Penthorum sedoides,F,Perennial,Non-legume forb,C3,614,Pentsedo,Pense,Native,504241,Penthorum sedoides,Crassulaceae
+380,Perennials,Unknown,Perennial,Unknown,Unknown,984,Perenni,Peren,Unknown,,,Unknown
+381,Permanently unassigned,NA,NA,NA,NA,998,Permunas,Perun,Unknown,,,NA
+382,Petalostemum candidum,L,Perennial,Legume,C3,651,Petacand,Petca,Native,26603,Dalea candida,Fabaceae
+383,Petalostemum purpureum,L,Perennial,Legume,C3,652,Petapurp,Petpu,Native,26642,Dalea purpurea,Fabaceae
+384,Petalostemum sp.,L,Perennial,Legume,C3,418,Petalosp,Petsp,Native,,,Fabaceae
+385,Petalostemum villosum,L,Perennial,Legume,C3,416,Petavill,Petvi,Native,26653,Dalea villosa,Fabaceae
+386,Phalaris arundinacea,C3,Perennial,Grass,C3,115,Phalarun,Phaar,Native,41335,Phalaris arundinacea,Poaceae
+387,Phleum pratense,C3,Perennial,Grass,C3,116,Phleprat,Phlpr,Introduced,41062,Phleum pratense,Poaceae
+388,Phlox paniculata,F,Perennial,Non-legume forb,C3,762,Phlopani,Phlpa,Introduced,30973,Phlox paniculata,Polemoniaceae
+389,Phlox pilosa,F,Perennial,Non-legume forb,C3,593,Phlopilo,Phlpi,Native,30974,Phlox pilosa,Polemoniaceae
+390,Phlox sp.,F,Perennial,Non-legume forb,C3,545,Phloxsp,Phlsp,Unknown,,,Polemoniaceae
+391,Phryma leptostachya,F,Perennial,Non-legume forb,C3,785,Phrylept,Phrle,Native,504348,Phryma leptostachya,Phrymaceae
+392,Physalis heterophylla,F,Perennial,Non-legume forb,C3,594,Physhete,Phyhe,Native,30601,Physalis heterophylla,Solanaceae
+393,Physalis sp.,F,Perennial,Non-legume forb,C3,642,Physalsp,Physp,Unknown,,,Solanaceae
+394,Physalis virginiana,F,Perennial,Non-legume forb,C3,546,Physvirg,Phyvi,Native,30612,Physalis virginiana,Solanaceae
+395,Picea sp.,W,Perennial,Woody,C3,361,Piceasp,Picsp,Unknown,,,Pinaceae
+396,Pilea pumila,F,Annual,Non-legume forb,C3,690,Pilepumi,Pilpu,Native,19130,Pilea pumila,Urticaceae
+397,Pine cones,NA,NA,NA,NA,93,Pinecone,Pinco,Unknown,,,NA
+398,Pine needles,NA,NA,NA,NA,94,Pineneed,Pinne,Unknown,,,NA
+399,Pinus banksiana,W,Perennial,Woody,C3,365,Pinubank,Pinba,Native,183319,Pinus banksiana,Pinaceae
+400,Pinus resinosa,W,Perennial,Woody,C3,374,Pinuresi,Pinre,Native,183375,Pinus resinosa,Pinaceae
+401,Pinus sp.,W,Perennial,Woody,C3,355,Pinussp,Pinsp,Unknown,,,Pinaceae
+402,Pinus strobus,W,Perennial,Woody,C3,323,Pinustro,Pinst,Native,183385,Pinus strobus,Pinaceae
+403,Plantago (purshii) patagonica,F,Annual,Non-legume forb,C3,638,Planpurs,Plapu,Native,32907,Plantago patagonica,Plantaginaceae
+404,Plantago lanceolata,F,Perennial,Non-legume forb,C3,595,Planlanc,Plala,Introduced,32874,Plantago lanceolata,Plantaginaceae
+405,Plantago major,F,Perennial,Non-legume forb,,1040,Planmajo,Plama,Introduced,,,Plantaginaceae
+406,Poa compressa,C3,Perennial,Grass,C3,143,Poacompr,Poaco,Introduced,41082,Poa compressa,Poaceae
+407,Poa palustris,C3,Perennial,Grass,C3,148,Poapalus,Poapa,Native,41151,Poa palustris,Poaceae
+408,Poa pratensis,C3,Perennial,Grass,C3,117,Poaprate,Poapr,Native and/or Introduced,41088,Poa pratensis,Poaceae
+409,Poa sp.,C3,Perennial,Grass,C3,132,Poasp,Poasp,Unknown,,,Poaceae
+410,Polygala polygama,F,Biennial,Non-legume forb,C3,547,Polypoly,Polpo,Native,29308,Polygala polygama,Polygalaceae
+411,Polygala sanquinea,F,Annual,Non-legume forb,,1011,Polysanq,Polsa,Native ,,,Polygalaceae
+412,Polygala sp.,F,Perennial,Non-legume forb,C3,777,Polygasp,Polsp,Unknown,,,Polygalaceae
+413,Polygonatum biflorum,F,Perennial,Non-legume forb,C3,1041,Polygbif,Polbi,Native,,,Lilliaceae
+414,Polygonatum canaliculatum,F,Perennial,Non-legume forb,C3,658,Polycana,Polca,Native,519344,Polygonatum canaliculatum,Lilliaceae
+415,Polygonatum sp.,F,Perennial,Non-legume forb,C3,661,Polygosp,Polsp,Unknown,,,Lilliaceae
+416,Polygonella articulata,F,Annual,Non-legume forb,C3,591,Polyarti,Polar,Native,21308,Polygonella articulata,Polygonaceae
+417,Polygonum amphibium,F,Perennial,Non-legume forb,C3,691,Polyamph,Polam,Native,20865,Polygonum amphibium,Polygonaceae
+418,Polygonum arifolium,F,Annual,Non-legume forb,C3,713,Polyarif,Polar,Native,20849,Polygonum arifolium,Polygonaceae
+419,Polygonum cilinode,F,Perennial,Non-legume forb,C3,775,Polycili,Polci,Native,20887,Polygonum cilinode,Polygonaceae
+420,Polygonum convolvulus,F,Annual,Non-legume forb,C3,548,Polyconv,Polco,Introduced,20853,Polygonum convolvulus,Polygonaceae
+421,Polygonum hydropiper,F,Annual,Non-legume forb,C3,753,Polyhydr,Polhy,Introduced,20856,Polygonum hydropiper,Polygonaceae
+422,Polygonum lapathafolium,F,Annual,Non-legume forb,C3,714,Polylapa,Polla,Native,20860,Polygonum lapathifolium,Polygonaceae
+423,Polygonum pensylvanicum,F,Annual,Non-legume forb,C3,596,Polypens,Polpe,Native,20861,Polygonum pensylvanicum,Polygonaceae
+424,Polygonum persicaria,F,Annual,Non-legume forb,C3,608,Polypers,Polpe,Introduced,20915,Polygonum persicaria,Polygonaceae
+425,Polygonum sagittatum,F,Annual,Non-legume forb,C3,692,Polysagi,Polsa,Native,20863,Polygonum sagittatum,Polygonaceae
+426,Polygonum scandens,F,Annual,Non-legume forb,C3,659,Polyscan,Polsc,Native,20924,Polygonum scandens,Polygonaceae
+427,Polygonum sp.,F,Annual,Non-legume forb,C3,624,Polygsp2,Polsp,Unknown,,,Polygonaceae
+428,Polygonum tenue,F,Annual,Non-legume forb,C3,597,Polytenu,Polte,Native,20929,Polygonum tenue,Polygonaceae
+429,Polytricum sp.,O,Unknown,Moss & lichens,C3,5,Polytrsp,Polsp,Unknown,,,Polytrichaceae
+430,Populus balsamifera,W,Perennial,Woody,C3,371,Popubals,Popba,Native,22453,Populus balsamifera,Salicaceae
+431,Populus deltoides,W,Perennial,Woody,C3,307,Popudelt,Popde,Native,22445,Populus deltoides,Salicaceae
+432,Populus grandidentata,W,Perennial,Woody,C3,333,Popugran,Popgr,Native,22463,Populus grandidentata,Salicaceae
+433,Populus tremuloides,W,Perennial,Woody,C3,326,Poputrem,Poptr,Native,195773,Populus tremuloides,Salicaceae
+434,Portulaca oleracea,F,Annual,Non-legume forb,Cx,771,Portoler,Porol,Introduced,20422,Portulaca oleracea,Portulacaceae
+435,Potentilla argentea,F,Perennial,Non-legume forb,C3,598,Potearge,Potar,Introduced,24691,Potentilla argentea,Rosaceae
+436,Potentilla arguta,F,Perennial,Non-legume forb,C3,599,Poteargu,Potar,Native,24692,Potentilla arguta,Rosaceae
+437,Potentilla norvegica,F,Biennial,Non-legume forb,C3,549,Potenorv,Potno,Native,24730,Potentilla norvegica,Rosaceae
+438,Potentilla palustris,F,Perennial,Non-legume forb,C3,693,Potepalu,Potpa,Native,24676,Potentilla palustris,Rosaceae
+439,Potentilla recta,F,Perennial,Non-legume forb,C3,550,Poterect,Potre,Introduced,24742,Potentilla recta,Rosaceae
+440,Potentilla simplex,F,Perennial,Non-legume forb,C3,551,Potesimp,Potsi,Native,24751,Potentilla simplex,Rosaceae
+441,Potentilla sp.,F,Perennial,Non-legume forb,C3,618,Potentsp,Potsp,Unknown,,,Rosaceae
+442,Prenanthes alba,F,"Biennial, perennial",Non-legume forb,,1042,Prenalba,Preal,Native,,,Asteraceae
+443,Prenanthes racemosa,F,Perennial,Non-legume forb,C3,673,Prenrace,Prera,Native,38281,Prenanthes racemosa,Asteraceae
+444,Prunella vulgaris,F,Perennial,Non-legume forb,,1043,Prunvulg,Pruvu,Native,,,Lamiaceae
+445,Prunus americana,W,Perennial,Woody,C3,318,Prunamer,Pruam,Native,24763,Prunus americana,Rosaceae
+446,Prunus pensylvanica,W,Perennial,Woody,C3,308,Prunpens,Prupe,Native,24799,Prunus pensylvanica,Rosaceae
+447,Prunus pumila,W,Perennial,Woody,C3,309,Prunpumi,Prupu,Native,504625,Prunus pumila,Rosaceae
+448,Prunus serotina,W,Perennial,Woody,C3,332,Prunsero,Pruse,Native,24764,Prunus serotina,Rosaceae
+449,Prunus sp.,W,Perennial,Woody,C3,310,Prunussp,Prusp,Unknown,,,Rosaceae
+450,Prunus virginiana,W,Perennial,Woody,C3,336,Prunvirg,Pruvi,Native,24806,Prunus virginiana,Rosaceae
+451,Pteridium aquilinum,O,Perennial,Fern,C3,4,Pteraqui,Pteaq,Native,17224,Pteridium aquilinum,Dennstaedtiaceae
+452,Pycnanthemum virginianum,F,Perennial,Non-legume forb,C3,738,Pycnvirg,Pycvi,Native,32670,Pycnanthemum virginianum,Lamiaceae
+453,Pyrola rotundifolia,F,Perennial,Non-legume forb,C3,784,Pyrorotu,Pyrro,Native,23762,Pyrola rotundifolia,Pyrolaceae
+454,Pyrola sp.,F,Perennial,Non-legume forb,C3,670,Pyrolasp,Pyrsp,Unknown,,,Pyrolaceae
+455,Pyrus malus,W,Perennial,Woody,,1044,Pyrumalu,Pyrma,Introduced,,,Rosaceae
+456,Quercus alba,W,Perennial,Woody,C3,319,Queralba,Queal,Native,19290,Quercus alba,Fagaceae
+457,Quercus borealis,W,Perennial,Woody,C3,300,Querbore,Quebo,Native,19303,Quercus borealis,Fagaceae
+458,Quercus borealis-ellipsoidalis,W,Perennial,Woody,C3,328,Querbor2,Quebo,Native,,,Fagaceae
+459,Quercus elipsoidalis grub,NA,NA,NA,NA,1006,NA,NA,NA,,,NA
+460,Quercus ellipsoidalis,W,Perennial,Woody,C3,301,Querelli,Queel,Native,19327,Quercus ellipsoidalis,Fagaceae
+461,Quercus macrocarpa,W,Perennial,Woody,C3,302,Quermacr,Quema,Native,19287,Quercus macrocarpa,Fagaceae
+462,Quercus macrocarpa grub,NA,NA,NA,NA,1007,NA,NA,NA,,,NA
+463,Quercus sp.,W,Perennial,Woody,C3,320,Quercusp,Quesp,Native,,,Fagaceae
+464,Ranunculus rhomboideus,F,Perennial,Non-legume forb,C3,626,Ranurhom,Ranrh,Native,18643,Ranunculus rhomboideus,Ranunculaceae
+465,Ratibida pinnata,F,Perennial,Non-legume forb,C3,739,Ratipinn,Ratpi,Native,38343,Ratibida pinnata,Asteraceae
+466,Real Weeds,Unknown,Unknown,Unknown,Unknown,997,NA,NA,Unknown,,,Unknown
+467,Reproductive stem,Unknown,Unknown,Unknown,Unknown,813,Reprstem,Repst,Unknown,,,Unknown
+468,Rhamnus cathartica,W,Perennial,Woody,C3,377,Rhamcath,Rhaca,Introduced,28573,Rhamnus cathartica,Rhamnaceae
+469,Rhamnus frangula,W,Perennial,Woody,C3,375,Rhamfran,Rhafr,Introduced,28579,Rhamnus frangula,Rhamnaceae
+470,Rhamnus sp.,W,Perennial,Woody,C3,376,Rhamnusp,Rhasp,Introduced,,,Rhamnaceae
+471,Rhus glabra,W,Perennial,Woody,C3,303,Rhusglab,Rhugl,Native,28782,Rhus glabra,Anacardiaceae
+472,Rhus radicans,W,Perennial,Woody,C3,315,Rhusradi,Rhura,Native,28776,Rhus radicans,Anacardiaceae
+473,Rhus sp.,W,Perennial,Woody,C3,358,Rhussp,Rhusp,Unknown,,,Anacardiaceae
+474,Rhus typhina,W,Perennial,Woody,,1045,Rhustyph,Rhuty,Native,,,Anacardiaceae
+475,Ribes hirtellum,W,Perennial,Woody,C3,356,Ribehirt,Ribhi,Native,24470,Ribes hirtellum,Saxifragaceae
+476,Robinia pseudacacia,W,Perennial,Woody,C3,1046,Robipseu,Robps,Native,,,Fabaceae
+477,Roots,NA,NA,NA,NA,803,Roots,Roots,Unknown,,,NA
+478,Rosa arkansana,W,Perennial,Woody,C3,304,Rosaarka,Rosar,Native,24815,Rosa arkansana,Rosaceae
+479,Rosa blanda,W,Perennial,Woody,C3,338,Rosablan,Rosbl,Native,24816,Rosa blanda,Rosaceae
+480,Rosa carolina,W,Perennial,Woody,,1047,Rosacaro,Rosca,Native,,,Rosaceae
+481,Rubus alleghaniensis,W,Perennial,woody,,1048,Rubualle,Rubal,Native,,,Rosaceae
+482,Rubus canadensis,W,Perennial,woody,,1049,Rubucana,Rubca,Native,,,Rosaceae
+483,Rubus flagellaris,W,Perennial,Woody,C3,311,Rubuflag,Rubfl,Native,24921,Rubus flagellaris,Rosaceae
+484,Rubus idaeus,W,Perennial,Woody,C3,364,Rubuidae,Rubid,Native,24947,Rubus idaeus,Rosaceae
+485,Rubus occidentalis,W,Perennial,Woody,C3,316,Rubuocci,Ruboc,Native,24854,Rubus occidentalis,Rosaceae
+486,Rubus pubescens,W,Perennial,woody,,1050,Rubupube,Rubpu,Native,,,Rosaceae
+487,Rubus sp.,W,Perennial,Woody,C3,305,Rubussp,Rubsp,Native,,,Rosaceae
+488,Rubus strigosus,W,Perennial,Woody,C3,367,Rubustri,Rubst,Native,25056,Rubus strigosus,Rosaceae
+489,Rudbeckia hirta,F,Biennial,Non-legume forb,C4,1051,Rudbhirt,Rudhi,Native,,,Asteraceae
+490,Rudbeckia serotina,F,Perennial,Non-legume forb,C3,552,Rudbsero,Rudse,Native,36766,Rudbeckia serotina,Asteraceae
+491,Rumex acetosella,F,Perennial,Non-legume forb,C3,553,Rumeacet,Rumac,Introduced,20934,Rumex acetosella,Polygonaceae
+492,Rumex mexicanus,F,Perennial,Non-legume forb,C3,715,Rumemexi,Rumme,Native,20966,Rumex mexicanus,Polygonaceae
+493,Rumex orbiculatus,F,Perennial,Non-legume forb,C3,694,Rumeorbi,Rumor,Native,20967,Rumex orbiculatus,Polygonaceae
+494,Rumex sp.,F,Unknown,Non-legume forb,C3,695,Rumexsp,Rumsp,Native and/or Introduced,,,Polygonaceae
+495,Sagittaria latifolia,F,Perennial,Non-legume forb,C3,696,Sagilati,Sagla,Native,38908,Sagittaria latifolia,Alismataceae
+496,Salix bebbiana,W,Perennial,Woody,C3,349,Salibebb,Salbe,Native,22507,Salix bebbiana,Salicaceae
+497,Salix discolor,W,Perennial,Woody,C3,362,Salidisc,Saldi,Native,22524,Salix discolor,Salicaceae
+498,Salix gracilis,W,Perennial,Woody,C3,350,Saligrac,Salgr,Native,520819,Salix gracilis,Salicaceae
+499,Salix humilis,W,Perennial,Woody,C3,368,Salihumi,Salhu,Native,22546,Salix humilis,Salicaceae
+500,Salix interior,W,Perennial,Woody,C3,363,Saliinte,Salin,Native,520829,Salix interior,Salicaceae
+501,Salix pedicellaris,W,Perennial,Woody,C3,351,Salipedi,Salpe,Native,22564,Salix pedicellaris,Salicaceae
+502,Salix pyrifolia,W,Perennial,Woody,C3,357,Salipyri,Salpy,Native,22575,Salix pyrifolia,Salicaceae
+503,Salix serrisima,W,Perennial,Woody,C3,370,Saliserr,Salse,Native,22581,Salix serissima,Salicaceae
+504,Salix sp.,W,Perennial,Woody,C3,321,Salixsp,Salsp,Native,,,Salicaceae
+505,Salsola kali,F,Annual,Non-legume forb,C4,687,Salskali,Salka,Introduced,20655,Salsola kali,Chenopodiaceae
+506,Saxifraga pensylvanica,F,Perennial,Non-legume forb,C3,716,Saxipens,Saxpe,Native,24234,Saxifraga pensylvanica,Saxifragaceae
+507,Schizachne purpurascens,G,Perennial,Grass,,1052,Schipurp,Schpu,Native,,,Poaceae
+508,Schizachyrium scoparium,C4,Perennial,Grass,C4,103,Schiscop,Schsc,Native,42076,Schizachyrium scoparium,Poaceae
+509,Scirpus cyperinus,S,Perennial,Sedge,C3,249,Scircype,Scicy,Native,40228,Scirpus cyperinus,Cyperaceae
+510,Scirpus validus,S,Perennial,Sedge,C3,248,Scirvali,Sciva,Native,40239,Scirpus validus,Cyperaceae
+511,Scleria triglomerata,S,Perennial,Sedge,C4,250,Scletrig,Scltr,Native,40318,Scleria triglomerata,Cyperaceae
+512,Scutellaria galericulata,F,Perennial,Non-legume forb,C3,717,Scutgale,Scuga,Native,32798,Scutellaria galericulata,Lamiaceae
+513,Scutellaria lateriflora,F,Perennial,Non-legume forb,C3,601,Scutlate,Scula,Native,32765,Scutellaria lateriflora,Lamiaceae
+514,Scutellaria parvula,F,Perennial,Non-legume forb,C3,554,Scutparv,Scupa,Native,32776,Scutellaria parvula,Lamiaceae
+515,Secale cereale,C3,Annual,Grass,C3,144,Secacere,Secce,Introduced,42090,Secale cereale,Poaceae
+516,Sedges,S,Unknown,Sedge,Unknown,900,Sedges,Sedge,Unknown,,,Cyperaceae
+517,Seed contaminant - forb,F,Unknown,Forb,Unknown,995,NA,NA,Unknown,,,Unknown
+518,Seed contaminant - grass,G,Unknown,Grass,Unknown,994,NA,NA,Unknown,,,Unknown
+519,Seedlings,Unknown,Unknown,Unknown,Unknown,806,Seedlin,Seedl,Unknown,,,Unknown
+520,Senecio aureus,F,Perennial,Non-legume forb,C3,555,Seneaure,Senau,Native,36091,Senecio aureus,Asteraceae
+521,Senecio pauperculus,F,Perennial,Non-legume forb,C3,556,Senepaup,Senpa,Native,36168,Senecio pauperculus,Asteraceae
+522,Senecio sp.,F,Perennial,Non-legume forb,C3,656,Senecisp,Sensp,Unknown,,,Asteraceae
+523,Setaria italica,C4,Annual,Grass,C4,153,Setaital,Setit,Introduced,41248,Setaria italica,Poaceae
+524,Setaria lutescens (glauca),C4,Annual,Grass,C4,118,Setalute,Setlu,Introduced,565884,Setaria glauca,Poaceae
+525,Setaria sp.,C4,Annual,Grass,C4,137,Setarisp,Setsp,Unknown,,,Poaceae
+526,Setaria viridis,C4,Annual,Grass,C4,119,Setaviri,Setvi,Introduced,41231,Setaria viridis,Poaceae
+527,Silene antirrhina,F,Annual,Non-legume forb,C3,557,Sileanti,Silan,Native,20045,Silene antirrhina,Caryophyllaceae
+528,Silene sp.,F,Unknown,Non-legume forb,C3,749,Silenesp,Silsp,Native and/or Introduced,,,Caryophyllaceae
+529,Sisymbrium altissimum,F,Biennial,Non-legume forb,C3,600,Sisyalti,Sisal,Introduced,23312,Sisymbrium altissimum,Brassicaceae
+530,Sisyrinchium campestre,F,Perennial,Non-legume forb,C3,558,Sisycamp,Sisca,Native,43254,Sisyrinchium campestre,Iridaceae
+531,Smilacina racemosa,F,Perennial,Non-legume forb,C3,623,Smilrace,Smira,Native,43036,Smilacina racemosa,Lilliaceae
+532,Smilacina stellata,F,Perennial,Non-legume forb,C3,559,Smilstel,Smist,Native,43038,Smilacina stellata,Lilliaceae
+533,Smilax herbacea,F,Perennial,Non-legume forb,C3,705,Smilherb,Smihe,Native,43356,Smilax herbacea,Lilliaceae
+534,Solanum americanum,F,Annual,Non-legume forb,C3,613,Solaamer,Solam,Native,565523,Solanum americanum,Solanaceae
+535,Solanum caroliniense,F,Perennial,Non-legume forb,C3,744,Solacaro,Solca,Introduced,30413,Solanum carolinense,Solanaceae
+536,Solanum dulcamara,F,Annual,Non-legume forb,C3,664,Soladulc,Soldu,Introduced,30414,Solanum dulcamara,Solanaceae
+537,Solanum nigrum,F,"Annual, perennial",Non-legume forb,,1055,Solanigr,Solni,Introduced,,,Solanaceae
+538,Solidago altissima,F,Perennial,Non-legume forb,C3,761,Solialti,Solal,Native,36228,Solidago altissima,Asteraceae
+539,Solidago canadensis,F,Perennial,Non-legume forb,C3,603,Solicana,Solca,Native,36224,Solidago canadensis,Asteraceae
+540,Solidago gigantea,F,Perennial,Non-legume forb,C3,560,Soligiga,Solgi,Native,36259,Solidago gigantea,Asteraceae
+541,Solidago graminifolia,F,Perennial,Non-legume forb,C3,604,Soligram,Solgr,Native,521716,Solidago graminifolia,Asteraceae
+542,Solidago juncea,F,Perennial,Non-legume forb,,1053,Solijunc,Solju,Native,,,Asteraceae
+543,Solidago missouriensis,F,Perennial,Non-legume forb,C3,650,Solimiss,Solmi,Native,36277,Solidago missouriensis,Asteraceae
+544,Solidago nemoralis,F,Perennial,Non-legume forb,C3,561,Solinemo,Solne,Native,36281,Solidago nemoralis,Asteraceae
+545,Solidago rigida,F,Perennial,Non-legume forb,C3,562,Solirigi,Solri,Native,36297,Solidago rigida,Asteraceae
+546,Solidago sp.,F,Perennial,Non-legume forb,C3,605,Solidasp,Solsp,Native,,,Asteraceae
+547,Solidago speciosa,F,Perennial,Non-legume forb,C3,563,Solispec,Solsp,Native,36310,Solidago speciosa,Asteraceae
+548,Sonchus arvensis,F,Perennial,Non-legume forb,,1056,Soncarve,Sonar,Introduced,,,Asteraceae
+549,Sorghastrum nutans,C4,Perennial,Grass,C4,120,Sorgnuta,Sornu,Native,42102,Sorghastrum nutans,Poaceae
+550,Spartina pectinata,C4,Perennial,Grass,C4,149,Sparpect,Spape,Native,41272,Spartina pectinata,Poaceae
+551,Sphagnum sp.,O,Unknown,Moss & lichens,C3,15,Sphagnsp,Sphsp,Native,,,Sphagnaceae
+552,Spiraea alba,W,Perennial,Woody,C3,348,Spiralba,Spial,Native,25329,Spiraea alba,Rosaceae
+553,Spiraea tomentosa,W,Perennial,Woody,C3,352,Spirtome,Spito,Native,25342,Spiraea tomentosa,Rosaceae
+554,Sporobolus cryptandrus,C4,Perennial,Grass,C4,121,Sporcryp,Spocr,Native,42132,Sporobolus cryptandrus,Poaceae
+555,Sporobolus heterolepis,C4,Perennial,Grass,C4,152,Sporhete,Spohe,Native,42119,Sporobolus heterolepis,Poaceae
+556,Sporobolus sp.,C4,Perennial,Grass,C4,133,Sporobsp,Sposp,Native,,,Poaceae
+557,Stachys palustris,F,Perennial,Non-legume forb,C3,602,Stacpalu,Stapa,Native,32344,Stachys palustris,Lamiaceae
+558,Stachys sp.,F,Unknown,Non-legume forb,C3,752,Stachysp,Stasp,Native and/or Introduced,,,Lamiaceae
+559,Stachys tenuifolia,F,Unknown,Non-legume forb,,1057,Stactenu,State,Native,,,Lamiaceae
+560,Stellaria longifolia,F,Perennial,Non-legume forb,C3,564,Stellong,Stelo,Native,20185,Stellaria longifolia,Caryophyllaceae
+561,Stellaria media,F,"Annual, perennial",Non-legume forb,C3,779,Stelmedi,Steme,Introduced,20169,Stellaria media,Caryophyllaceae
+562,Stems,Unknown,Unknown,Unknown,Unknown,801,Stems,Stems,Unknown,,,Unknown
+563,Stipa comata,C3,Perennial,Grass,C3,165,Stipcoma,Stico,Native,42172,Stipa comata,Poaceae
+564,Stipa spartea,C3,Perennial,Grass,C3,122,Stipspar,Stisp,Native,42166,Stipa spartea,Poaceae
+565,Stipa spicata,C3,Perennial,Grass,C3,166,Stipspic,Stisp,Native,565572,Trachypogon spicatus,Poaceae
+566,Streptopus roseus,F,Perennial,Non-legume forb,,1058,Strerose,Strro,Native,,,Lilliaceae
+567,Strophostyles leiosperma,L,Annual,Legume,C3,412,Stroleio,Strle,Native,26203,Strophostyles leiosperma,Fabaceae
+568,Symphoricarpos occidentalis,W,Perennial,Woody,,1009,Sympocci,Symoc,Native,,,Caprifoliaceae
+569,Taraxacum sp.,F,Unknown,Non-legume forb,,1001,Taraxasp,Tarsp,Native and/or Introduced,,,Asteraceae
+570,Taraxacum officinalis,F,Perennial,Non-legume forb,C3,630,Taraoffi,Tarof,Introduced,36213,Taraxacum officinale,Asteraceae
+571,Thalictrum dasycarpum,F,Perennial,Non-legume forb,C3,740,Thaldasy,Thada,Native,18667,Thalictrum dasycarpum,Ranunculaceae
+572,Thalictrum dioicum,F,Perennial,Non-legume forb,C3,718,Thaldioi,Thadi,Native,18669,Thalictrum dioicum,Ranunculaceae
+573,Thelypteris palustris,O,Perennial,Fern,C3,13,Thelpalu,Thepa,Native,17251,Thelypteris palustris,Aspleniaceae
+574,Toothpick (t.p.),NA,NA,NA,NA,,NA,NA,NA,,,NA
+575,Tradescantia bracteata,F,Perennial,Non-legume forb,C3,565,Tradbrac,Trabr,Native,39157,Tradescantia bracteata,Commelinaceae
+576,Tradescantia occidentalis,F,Perennial,Non-legume forb,C3,566,Tradocci,Traoc,Native,39168,Tradescantia occidentalis,Commelinaceae
+577,Tradescantia sp.,F,Unknown,Non-legume forb,C3,745,Tradessp,Trasp,Native and/or Introduced,,,Commelinaceae
+578,Tragopogon dubius (major),F,Biennial,Non-legume forb,C3,567,Tragdubi,Tradu,Introduced,38564,Tragopogon dubius,Asteraceae
+579,Triadenum fraseri,F,Perennial,Non-legume forb,C3,697,Triafras,Trifr,Native,21473,Triadenum fraseri,Clusiaceae
+580,Trientalis borealis,F,Perennial,Non-legume forb,C3,660,Triebore,Tribo,Native,24053,Trientalis borealis,Primulaceae
+581,Trifolium arvense,L,Annual,Legume,C3,410,Trifarve,Triar,Introduced,26221,Trifolium arvense,Fabaceae
+582,Trifolium hybridum,L,Perennial,Legume,C3,413,Trifhybr,Trihy,Introduced,26261,Trifolium hybridum,Fabaceae
+583,Trifolium pratense,L,Perennial,Legume,C3,404,Trifprat,Tripr,Introduced,26313,Trifolium pratense,Fabaceae
+584,Trifolium repens,L,Perennial,Legume,C3,405,Trifrepe,Trire,Introduced,26206,Trifolium repens,Fabaceae
+585,Trifolium sp.,L,Perennial,Legume,C3,409,Trifolsp,Trisp,Introduced,,,Fabaceae
+586,Typha glauca,F,Perennial,Non-legume forb,C3,700,Typhglau,Typgl,Native,42328,Typha glauca,Typhaceae
+587,Typha latifolia,F,Perennial,Non-legume forb,C3,701,Typhlati,Typla,Native,42326,Typha latifolia,Typhaceae
+588,Typha sp.,S,Perennial,Sedge,C3,766,Typhasp,Typsp,Native and/or Introduced,,,Typhaceae
+589,Ulmus americana,W,Perennial,Woody,C3,360,Ulmuamer,Ulmam,Native,19049,Ulmus americana,Ulmaceae
+590,Ulmus pumila,W,Perennial,Woody,C3,314,Ulmupumi,Ulmpu,Introduced,19057,Ulmus pumila,Ulmaceae
+591,Ulmus sp.,W,Perennial,Woody,C3,381,Ulmussp,Ulmsp,Unknown,,,Ulmaceae
+592,Unsorted biomass,Unknown,Unknown,Unknown,Unknown,91,Unsobiom,unsbi,NA,,,Unknown
+593,Urtica dioica,F,Perennial,Non-legume forb,C3,707,Urtidioi,Urtdi,Native,19152,Urtica dioica,Urticaceae
+594,Urtica gracilis,F,Perennial,Non-legume forb,,1002,Urtigrac,Urtgr,Native,,,Urticaceae
+595,Utricularia sp.,F,Unknown,Non-legume forb,C3,754,Utricusp,Utrsp,Native,,,Lentibulariaceae
+596,Uvularia sessifolia,F,Perennial,Non-legume forb,C3,668,Uvulsess,Uvuse,Native,43112,Uvularia sessilifolia,Lilliaceae
+597,Vaccinium angustifolium,W,Perennial,Woody,C3,335,Vaccangu,Vacan,Native,23579,Vaccinium angustifolium,Ericaceae
+598,Vaccinium myrtilloides,W,Perennial,Woody,C3,312,Vaccmyrt,Vacmy,Native,23604,Vaccinium myrtilloides,Ericaceae
+599,Vaccinium sp.,W,Perennial,Woody,C3,354,Vaccinsp,Vacsp,Native,,,Ericaceae
+600,Verbascum thapsus,F,Biennial,Non-legume forb,C3,568,Verbthap,Verth,Introduced,33394,Verbascum thapsus,Scrophulariaceae
+601,Verbena bracteata,F,Perennial,Non-legume forb,C3,586,Verbbrac,Verbr,Native,32085,Verbena bracteata,Verbenaceae
+602,Verbena hastata,F,Perennial,Non-legume forb,C3,698,Verbhast,Verha,Native,32071,Verbena hastata,Verbenaceae
+603,Verbena stricta,F,Perennial,Non-legume forb,C3,741,Verbstri,Verst,Native,32078,Verbena stricta,Verbenaceae
+604,Vernonia fasciculata,F,Perennial,Non-legume forb,C3,742,Vernfasc,Verfa,Native,38629,Vernonia fasciculata,Asteraceae
+605,Veronicastrum virginicum,F,Perennial,Non-legume forb,C3,655,Verovirg,Vervi,Native,34073,Veronicastrum virginicum,Verbenaceae
+606,Viburnum lentago,W,Perennial,Woody,C3,383,Vibulent,Vible,Native,,,Caprifoliaceae
+607,Vicia angustifolia,L,Annual,Legume,C3,408,Viciangu,Vican,Introduced,26330,Vicia angustifolia,Fabaceae
+608,Vicia villosa,L,Annual,Legume,C3,406,Vicivill,Vicvi,Introduced,26360,Vicia villosa,Fabaceae
+609,Viola pallens,F,Perennial,Non-legume forb,C3,719,Violpall,Viopa,Native,22124,Viola pallens,Violaceae
+610,Viola palustris,F,Perennial,Non-legume forb,,1054,Violpalu,Viopa,Native,,,Violaceae
+611,Viola pedata,F,Perennial,Non-legume forb,C3,610,Violpeda,Viope,Native,22130,Viola pedata,Violaceae
+612,Viola pedatifida,F,Perennial,Non-legume forb,C3,570,Violped2,Viope,Native,22131,Viola pedatifida,Violaceae
+613,Viola sagittata,F,Perennial,Non-legume forb,C3,606,Violsagi,Viosa,Native,22162,Viola sagittata,Violaceae
+614,Viola Selkirkii,F,Perennial,Non-legume forb,,1003,Violselk,Viose,Native,,,Violaceae
+615,Viola sp.,F,Perennial,Non-legume forb,C3,569,Violasp,Viosp,Unknown,,,Violaceae
+616,Vitis riparia,W,Perennial,Woody,C3,342,Vitiripa,Vitri,Native,28624,Vitis riparia,Vitaceae
+617,Weeds,Unknown,Unknown,Unknown,Unknown,811,Weeds,Weeds,Unknown,,,Unknown
+618,Woody,W,Perennial,Woody,,910,Woody,Woody,Unknown,,,Unknown
+619,Woody debris,NA,NA,NA,NA,92,Wooddebr,Woode,NA,,,NA
+620,Xyris torta,C3,Perennial,Grass,C3,134,Xyritort,Xyrto,Native,39117,Xyris torta,Poaceae
+621,Zanthoxylum americanum,W,Perennial,Woody,C3,344,Zantamer,Zanam,Native,505788,Zanthoxylum americanum,Rutaceae
+622,Zizia aptera,F,Perennial,Non-legume forb,C3,680,Ziziapte,Zizap,Native,29905,Zizia aptera,Apiaceae
+623,Zizia aurea,F,Perennial,Non-legume forb,C3,743,Ziziaure,Zizau,Native,29906,Zizia aurea,Apiaceae
+624,Agastache scrophulariifolia,F,Perennial,Non-legume forb,C3,,Agasscro,Agasc,Introduced,,,
+625,Miscanthus giganteus,C4,Perennial,Grass,C4,1059,Miscgiga,Misgi,Introduced,,Miscanthus giganteus,Poaceae
+626,Eryngium yuccifolium,F,Perennial,Non-legume forb,C3,,Erynyucc,Eryyu,Introduced,,,
+627,Miscellaneous forb 2,F,Perennial,Non-legume forb,C3,1060,Miscforb2,Misf2,Unknown,,,Fabaceae
+628,Arnoglossum reniforme,F,Perennial,Non-legume forb,C3,,Arnoreni,Arnre,Introduced,,,
+629,Echinacea pallida,F,Perennial,Non-legume forb ,C3,,Echipall,Echpa,Introduced,,,
+630,Helianthus pauciflorus,F,Perennial,Non-legume forb,C3,,Helipauc,Helpa,Introduced,,,
+631,Oligoneuron rigidum,F,Perennial,Non-legume forb,C3,,Oligrigi,Oliri,Introduced,,,
+632,Parthenium integrifolium,F,Perennial,Non-legume forb,C3,,Partinte,Parin,Introduced,,,
+633,Ratibida pinnata,F,Perennial,Non-legume forb,C3,,Ratipinn,Ratpi,Introduced,,,
+634,Silphium perfoliatum,F,Perennial,Non-legume forb,C3,,Silpperf,Silpe,Introduced,,,
+635,Symphyotrichum laeve,F,Perennial,Non-legume forb,C3,,Symplaev,Symla,Introduced,,,
+636,Symphyotrichum novae-angliae,F,Perennial,Non-legume forb,C3,,Sympnova,Symno,Introduced,,,
+637,Triosteum perfoliatum,F,Perennial,Non-legume forb,C3,,Trioperf,Tripe,Introduced,,,
+638,Tradescantia ohiensis,F,Perennial,Non-legume forb,C3,,Tradohie,Traoh,Introduced,,,
+639,Carex brevior,F,Perennial,Non-legume forb,C3,,Carebrev,Carbr,Introduced,,,
+640,Carex vulpinoidea,F,Perennial,Non-legume forb,C3,,Carevulp,Carvu,Introduced,,,
+641,Baptisia alba,F,Perennial,Legume,C3,,Baptalba,Bapal,Introduced,,,
+642,Desmanthus illinoensis,F,Perennial,Legume,C3,,Desmailli,Desil,Introduced,,,
+643,Desmodium illinoense,F,Perennial,Legume,C3,,Desmoilli,Desmil,Introduced,,,
+644,Glycyrrhiza lepidota,F,Perennial,Legume,C3,,Glyclepi,Glyle,Introduced,,,
+645,Gentiana flavida,F,Perennial,Non-legume forb,C3,,Gentflav,Genfl,Introduced,,,
+646,Hypericum pyramidatum,F,Perennial,Non-legume forb,C3,,Hypepyra,Hyppy,Introduced,,,
+647,Sisyrinchium angustifolium,F,Perennial,Non-legume forb,C3,,Sisyangu,Sisan,Introduced,,,
+648,Juncus dudleyi,,Perennial,Grass,,,Juncdudl,Jundu,Introduced,,,
+649,Physostegia virginiana,F,Perennial,Non-legume forb,C3,,Physvirg,Phyvi,Introduced,,,
+650,Hibiscus laevis,F,Perennial,Non-legume forb ,C3,,Hibilaev,Hibla,Introduced,,,
+651,Napaea dioica,F,Perennial,Non-legume forb,C3,,Napadioi,Napdi,Introduced,,,
+652,Gaura biennis,F,Perennial,Non-legume forb,C3,,Gaurbien,Gaubi,Introduced,,,
+653,Elymus virginicus,F,Perennial,Grass,C3,,Elymvirg,Elyvi,Introduced,,,
+654,Muhlenbergia mexicana,,Perennial,Grass,C3,,Muhlmexi,Muhme,Introduced,,,
+655,Sporobolus compositus,C4,Perennial,Grass,C4,,Sporcomp,Spoco,Introduced,,,
+656,Dodecatheon meadia,F,Perennial,Non-legume forb,C3,,Dodemead,Dodme,Introduced,,,
+657,Anemone canadensis,F,Perennial,Non-legume forb,C3,,Anemcana,Aneca,Introduced,,,
+658,Sceptridium multifidum,F,Perennial,Non-legume forb,C3,,Scepmult,Scemu,Native,,,
+659,Sceptridium dissectum,F,Perennial,Non-legume forb,C3,,Scepdiss,Scedi,Native,,,
+660,Achnatherum sp.,,Perennial,Grass,,,Achnatsp,Achsp,Native,,,
+661,Pinus sylvestris,W,Perennial,Woody,,,Pinusylv,Pinsy,Introduced,,,
+662,Malus sp.,W,Perennial,Woody,,,Malussp,Malsp,Unknown,,,
+663,Lonicera canadensis,,,,,0,Lonicana,Lonca,,0,,
+664,,,,,,,,,,,,
