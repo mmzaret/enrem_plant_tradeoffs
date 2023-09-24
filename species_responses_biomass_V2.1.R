@@ -1,9 +1,7 @@
 #Max Zaret
 #e245 nutrients x consumer removal#
 #Life history trade offs in grassland plant species
-#9-8-2022#
-#note that I can remove tradeoff/response code from earlier sections
-#contain all of ^^^ in the "Define tradeoffs section"
+#9-24-2023#
 
 #####Start####
 rm(list=ls())
@@ -361,12 +359,6 @@ summary(sma(formula = Consumer_LRR ~ NPK_LRR * Year, data=Consumers_set, method=
 
 summary(sma(formula = Consumer_LRR ~ NPK_LRR + Year, data=Consumers_set, method="SMA"))
 
-#Does relationship between C_LRR and NPK_LRR vary by Block?
-sma(formula = Consumer_LRR ~ NPK_LRR * Block, data=Consumers_set, method="SMA")
-#yes
-summary(sma(formula = Consumer_LRR ~ NPK_LRR * Block, data=Consumers_set, method="SMA"))
-
-summary(sma(formula = Consumer_LRR ~ NPK_LRR + Block, data=Consumers_set, method="SMA"))
 
 #Summary output for each treatment
 summary(sma(formula = Consumer_LRR ~ NPK_LRR * Treatment, data=Consumers_set, method="SMA")
@@ -471,8 +463,6 @@ cont <- cont %>%
 
 chisq.test(cont$`competition-defense`, cont$`growth-defense`)
 
-135+48
-
 #Functional Groups####
 #read in species info sheet
 species <- read.csv("cc_plant_species.csv")
@@ -541,19 +531,19 @@ summary(sma(formula = Consumer_LRR ~ NPK_LRR * Functional.group, data=Consumers_
 summary(sma(formula = Consumer_LRR ~ NPK_LRR + Functional.group, data=Consumers_set2, method="SMA", type="elevation"))
 
 summary(lme(fixed=Consumer_LRR ~ Functional.group,
-          random= ~1 | Year/Block,
+          random= ~1 | Year,
           data=Consumers_set2))
 
 anova(lme(fixed=Consumer_LRR ~ Functional.group * Treatment,
-            random= ~1 | Year/Block,
+            random= ~1 | Year,
             data=Consumers_set2))
 
 summary(lme(fixed=NPK_LRR ~ Functional.group,
-          random= ~1 | Year/Block,
+          random= ~1 | Year,
           data=Consumers_set2))
 
 anova(lme(fixed=NPK_LRR ~ Functional.group,
-          random= ~1 | Year/Block,
+          random= ~1 | Year,
           data=Consumers_set2))
 
 lsmeans(lme(fixed=Consumer_LRR ~ Functional.group,
@@ -577,7 +567,6 @@ x <- Consumers_set2 %>%
   labs(y="Response to \nConsumer Removal (LRR)", x="") +
   theme_bw() +
   theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1, size=10, face="bold", color="black"))
-  facet_wrap(~Treatment)
 
 y <- Consumers_set2 %>%
   group_by(Functional.group) %>%
@@ -616,16 +605,6 @@ summary(sma(formula = Consumer_LRR ~ NPK_LRR * Duration, data=Consumers_set, met
 
 
 #Plant Families
-View(data)
-
-top25percentspecies <- data %>%
-  group_by(Species) %>%
-  summarize(biomass = mean(Mass.g.m.2.)) %>%
-  filter(biomass > 8.26) %>%
-  filter(Species != "Oenothera biennis")
-  #ungroup() %>%
-  #summarize(Q1 = quantile(biomass, probs=0.75))
-
 Fam_set <- Consumers_set %>%
   group_by(Family) %>%
   filter(n() > 15)
@@ -724,7 +703,7 @@ summary(lme1)
 
 lsmeans(lme1 <- lme(fixed = (evenness) ~ Fertilizer.f * Treatment,
                     data = diversity,
-                    random = ~1 | Year/Block),
+                    random = ~1 | Year),
         pairwise ~ Fertilizer.f * Treatment, method="Tukey")
 
 
