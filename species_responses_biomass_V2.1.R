@@ -1,7 +1,7 @@
 #Max Zaret
 #e245 nutrients x consumer removal#
 #Life history trade offs in grassland plant species
-#9-24-2023#
+#2-13-2024
 
 #####Start####
 rm(list=ls())
@@ -16,9 +16,9 @@ library(ggpubr)
 standard_error <- function(x) sd(x) / sqrt(length(x))
 
 getwd()
-setwd("~/Documents/Research/Nutrients_Consumer_Removal/CH III/code")
+setwd("~/Documents/Research/Nutrients_Consumer_Removal/CH III/code") #change to your wd
 
-data <- read.csv("2019-2021 E245 Enemy Removal Aboveground Biomass.csv")
+data <- read.csv("2019-2021 E245 Enemy Removal Aboveground Biomass.csv") #this and other data files are on github and on EDI site
 
 #remove non-species-specific biomass from data frame (litter and moss)
 data <- data %>%
@@ -310,6 +310,7 @@ Consumers_set <- FF_set %>%
 levels(Consumers_set$Species)
 summary(Consumers_set)
 
+#this plot below is Fig2
 ggplot(Consumers_set, aes(NPK_LRR, Consumer_LRR, col=Treatment)) +
   geom_point(alpha=0.25) +
   geom_smooth(method="lm", se=FALSE) +
@@ -327,6 +328,7 @@ ggplot(Consumers_set, aes(NPK_LRR, Consumer_LRR, col=Treatment)) +
         legend.text = element_text(size=9)) +
   coord_fixed()
 
+#supplmental figure showing variability across years
 ggplot(Consumers_set, aes(NPK_LRR, Consumer_LRR, col=Treatment)) +
   geom_point(alpha=0.25) +
   geom_smooth(method="lm", se=FALSE) +
@@ -419,6 +421,7 @@ Consumers_set$Response <- relevel(Consumers_set$Response, ref='nutrient only')
 Consumers_set$Response <- relevel(Consumers_set$Response, ref='consumer only')
 Consumers_set$Response <- relevel(Consumers_set$Response, ref='no response')
 
+#plot below is figure 3
 Consumers_set %>%
   filter(Response != "NA") %>%
   ggplot(., aes(Response)) +
@@ -432,6 +435,7 @@ Consumers_set %>%
   theme(legend.position = c(0.5, 0.8)) +
   theme(legend.key.size = unit(0.3, 'cm'))
 
+#supplemental figure looking at variability across different pesticide/fence treatments
 Consumers_set %>%
   filter(Response != "NA") %>%
   ggplot(., aes(Response)) +
@@ -465,7 +469,7 @@ chisq.test(cont$`competition-defense`, cont$`growth-defense`)
 
 #Functional Groups####
 #read in species info sheet
-species <- read.csv("cc_plant_species.csv")
+species <- read.csv("cc_plant_species.csv") #find on cedar creek LTER website or github
 
 species <- species %>%
   select(Species, Functional.group, Duration, Family)
@@ -500,6 +504,7 @@ Consumers_set %>%
         legend.title = element_text( size=9, face="bold"), #change legend title font size
         legend.text = element_text(size=9))
 
+#below is plot for figure4
 Consumers_set %>%
   filter(Functional.group != "1") %>% #remove few woody species#
   ggplot(., aes(NPK_LRR, Consumer_LRR, col=Treatment)) +
@@ -596,6 +601,8 @@ Consumers_set2 %>%
         panel.grid.major.x = element_blank()) +
   facet_wrap(~Functional.group)
 
+#these results not included in manuscript - looking at plant family or life histories of the plants
+
 #Life history -- mostly perennials
 ggplot(Consumers_set, aes(Consumer_LRR, NPK_LRR, col=Duration)) +
   geom_point() +
@@ -661,7 +668,7 @@ hist((diversity_sub$richness))
 
 lme1 <- lme(fixed = (richness) ~ Fertilizer.f + Treatment,
            data = diversity_sub,
-           random = ~1 | Year/Block/Plot)
+           random = ~1 | Year/Block)
 
 plot(lme1)
 anova(lme1)
@@ -679,7 +686,7 @@ hist(log(diversity_sub$invsimpson))
 
 lme1 <- lme(fixed = log(invsimpson) ~ Fertilizer.f + Treatment,
             data = diversity_sub,
-            random = ~1 | Year/Block/Plot)
+            random = ~1 | Year/Block)
 
 plot(lme1)
 anova(lme1)
@@ -695,7 +702,7 @@ hist(log(diversity_sub$evenness))
 
 lme1 <- lme(fixed = log(evenness) ~ Fertilizer.f + Treatment,
             data = diversity_sub,
-            random = ~1 | Year/Block/Plot)
+            random = ~1 | Year/Block)
 
 plot(lme1)
 anova(lme1)
@@ -719,7 +726,8 @@ ggplot(diversity, aes(Fertilizer.f, richness, col=Treatment)) +
   #coord_cartesian(ylim=c(1.5,8))
 
 #diversity LRRs#####
-
+#calculate these to visually show response to treatments
+#comparing treatment plots to controls
 #nutrient addition#
 control <- diversity %>%
   filter(Treatment == "Control") %>%
@@ -955,6 +963,7 @@ Combine_LRR <- Combine_LRR %>%
            case_when(Treatment == "Nutrients" ~ "N",
                      Treatment != "Nutrients" ~ "CR"))
 
+#code below is to make figure 5
 x <- Combine_LRR %>%
   group_by(Binary) %>%
   summarize(mean = mean(richness_LRR),
@@ -1000,87 +1009,6 @@ z <- Combine_LRR %>%
 div_plots <- ggarrange(z, ggarrange(x,y, ncol=1, nrow=2, align="v"))
 
 div_plots
-
-Combine_LRR %>%
-  group_by(Binary) %>%
-  summarize(mean = mean(invsimpson_LRR),
-            ci = 1.96 * standard_error(invsimpson_LRR))
-
-lsmeans(lme(fixed=richness_LRR ~ Binary,
-            random= ~1 | Year/Block,
-            data=Combine_LRR),
-        pairwise ~ Binary)
-
-lsmeans(lme(fixed=evenness_LRR ~ Binary,
-            random= ~1 | Year/Block,
-            data=Combine_LRR),
-        pairwise ~ Binary)
-
-lsmeans(lme(fixed=invsimpson_LRR ~ Binary,
-            random= ~1 | Year/Block,
-            data=Combine_LRR),
-        pairwise ~ Binary)
-
-#redo lmes to match LRR calculations above (remove crossing of fert and nutrients)
-control <- diversity %>%
-  filter(Treatment == "Control") %>%
-  filter(Fertilizer.f == "0")
-
-nutrient <- diversity %>%
-  filter(Treatment == "Control") %>%
-  filter(Fertilizer.f == "1") %>%
-  mutate(Treatment = "Nutrients")
-
-diversity2 <- control %>%
-  rbind(nutrient) %>%
-  rbind(FF) %>%
-  rbind(SF) %>%
-  rbind(I) %>%
-  rbind(Fence) %>%
-  rbind(All) %>%
-  mutate(Treatment = as.factor(Treatment))
-
-#collapse consumer removal treatments into single variable#
-diversity2 <- diversity2 %>%
-  mutate(Binary = 
-           case_when(Treatment == "Nutrients" ~ "Nutrients",
-                     Treatment == "Control" ~ "Control",
-                     Treatment != "Nutrients" & Treatment != "Control" ~ "Consumer Removal")) %>%
-  mutate(Binary = as.factor(Binary))
-
-diversity2$Binary <- relevel(diversity2$Binary, ref='Consumer Removal')
-diversity2$Binary <- relevel(diversity2$Binary, ref='Nutrients')
-diversity2$Binary <- relevel(diversity2$Binary, ref='Control')
-
-hist(log(diversity2$richness))
-
-lme1 <- lme(fixed = (richness) ~ Binary,
-            data = diversity2,
-            random = ~1 | Year/Block)
-
-plot(lme1)
-anova(lme1)
-summary(lme1)
-
-hist(log(diversity2$evenness))
-
-lme1 <- lme(fixed = log(evenness) ~ Binary,
-            data = diversity2,
-            random = ~1 | Year/Block)
-
-plot(lme1)
-anova(lme1)
-summary(lme1)
-
-hist(log(diversity2$invsimpson))
-
-lme1 <- lme(fixed = log(invsimpson) ~ Binary,
-            data = diversity2,
-            random = ~1 | Year/Block)
-
-plot(lme1)
-anova(lme1)
-summary(lme1)
 
 #Robustness####
 #set LRR threshold to 1.4 (twice as high as original as in Lind et al. 2013 )
@@ -1171,769 +1099,6 @@ cont <- cont %>%
   pivot_wider(names_from = Tradeoff, values_from = Freq)
 
 chisq.test(cont$`competition-defense`, cont$`growth-defense`, correct=FALSE)
-
-#####prop competitors####
-#first calculate proportion of poor competitors and poor defended species in each plot#
-species_LRR <- Consumers_set %>%
-  group_by(Year, Species) %>%
-  summarize(Consumer_LRR = mean(Consumer_LRR),
-            NPK_LRR = mean(NPK_LRR)) %>%
-  mutate(Resource_Competition = 
-           case_when(NPK_LRR >= 0.693 ~ "poor competitor", #defining responses based on an effect if something doubles or halves in response
-                     NPK_LRR <= -0.693 ~ "good competitor",
-                     NPK_LRR < 0.693 & NPK_LRR > -0.693 ~ "no response")) %>%
-  mutate(Apparent_Competition = 
-           case_when(Consumer_LRR >= 0.693 ~ "poor defense",
-                     Consumer_LRR <= -0.693 ~ "good defense",
-                     Consumer_LRR < 0.693 & Consumer_LRR > -0.693 ~ "no response"))
-
-View(species_LRR)
-
-ggplot(species_LRR, aes(Apparent_Competition)) +
-         geom_histogram(stat="count")
-
-#add species information to original biomass df
-prop <- merge(data, species_LRR, by=c("Year", "Species"))
-
-View(prop)
-
-#subset to calculate biomass of species exhibiting poor competition and poor defense
-competition <- prop %>% 
-  group_by(Year, Block, Plot, Sub, Treatment, Fertilizer.f) %>%
-  filter(Resource_Competition == "poor competitor" & Apparent_Competition == "poor defense") %>%
-  summarize(poor_competitor_biomass = sum(Mass.g.m.2.))
-
-#total biomass for a plot
-total <- prop %>% 
-  group_by(Year, Block, Plot, Sub, Treatment, Fertilizer.f) %>%
-  summarize(total_biomass = sum(Mass.g.m.2.))
-
-competition <- merge(competition, total, by=c("Year", "Block", "Plot", "Sub", "Treatment", "Fertilizer.f"))
-
-#calculate proportion of biomass made up by poorly defended and poor resource competitor species
-competition <- competition %>%
-  mutate(prop_poor_competitor = poor_competitor_biomass/total_biomass)
-
-#now merge data with diversity metrics#
-combined <- merge(competition, diversity, by=c("Year", "Block", "Plot", "Sub", "Treatment", "Fertilizer.f"))
-
-#look at correlations#
-hist(sqrt(combined$prop_poor_competitor))
-
-anova(lme(sqrt(prop_poor_competitor) ~ Fertilizer.f * Treatment, data=combined,
-            random = ~1 | Year/Block/Plot/Sub))
-
-summary(lm(richness ~ prop_poor_competitor, data=combined))
-
-summary(lm(evenness ~ prop_poor_competitor, data=combined))
-summary(lm(log(invsimpson) ~ prop_poor_competitor, data=combined))
-
-ggplot(combined, aes(Fertilizer.f, prop_poor_competitor, col=Treatment)) +
-  geom_boxplot() +
-  scale_color_locuszoom() +
-  labs(y="Proportion of poor competitors") +
-  coord_cartesian(ylim=c(0,0.8))
-
-x <- ggplot(combined, aes(prop_poor_competitor, richness, col=Treatment)) +
-  #geom_smooth(method="lm", se=TRUE, col="black") +
-  labs(x="Proportion of poor competitors", y="Plant Species Richness")
-  scale_color_locuszoom()
-
-x + geom_point(data=combined, aes(prop_poor_competitor, richness, col=Fertilizer.f)) +
-  scale_color_locuszoom()
-
-x + geom_point(data=combined, aes(prop_poor_competitor, richness, col=Treatment)) +
-  geom_smooth(method="lm", se=FALSE) +
-  scale_color_locuszoom()
-
-#Visualize changes in diversity and proportion of poorly defended and poor resource competitors
-
-combined <- combined %>%
-  pivot_longer(cols = c("richness", "evenness", "invsimpson"),
-               names_to = "diversity",
-               values_to = "value")
-
-ggplot(combined, aes(prop_poor_competitor, value, col=Treatment)) +
-  geom_point() +
-  geom_smooth(method="lm", se=FALSE) 
-
-#now do path analysis#
-library(piecewiseSEM)
-
-#Make nutrient addition binary#
-combined <- combined %>%
-  mutate(Fertilizer.n = as.numeric(as.character(Fertilizer.f)))
-
-#Make consumer removal binary for interpretation#
-combined$FF <- ifelse(combined[,5] == "AllPesticides", 0, 
-                      ifelse(combined[,5] == "FoliarFungicide", 1, 
-                             ifelse(combined[,5] == "Insecticide", 0, 
-                                    ifelse(combined[,5] == "Control", 0,
-                                           ifelse(combined[,5] == "SoilDrenchFungicide", 0,
-                                                  ifelse(combined[,5] == "Fenced", 0,99))))))
-
-combined$SF <- ifelse(combined[,5] == "AllPesticides", 0, 
-                  ifelse(combined[,5] == "FoliarFungicide", 0, 
-                         ifelse(combined[,5] == "Insecticide", 0, 
-                                ifelse(combined[,5] == "Control", 0,
-                                       ifelse(combined[,5] == "SoilDrenchFungicide", 1,
-                                                     ifelse(combined[,5] == "Fenced", 0,99))))))
-
-combined$Fenced <- ifelse(combined[,5] == "AllPesticides", 0, 
-                      ifelse(combined[,5] == "FoliarFungicide", 0, 
-                             ifelse(combined[,5] == "Insecticide", 0, 
-                                    ifelse(combined[,5] == "Control", 0,
-                                           ifelse(combined[,5] == "SoilDrenchFungicide", 0,
-                                                  ifelse(combined[,5] == "Fenced", 1,99))))))
-
-combined$I <- ifelse(combined[,5] == "AllPesticides", 0, 
-                      ifelse(combined[,5] == "FoliarFungicide", 0, 
-                             ifelse(combined[,5] == "Insecticide", 1, 
-                                    ifelse(combined[,5] == "Control", 0,
-                                           ifelse(combined[,5] == "SoilDrenchFungicide", 0,
-                                                  ifelse(combined[,5] == "Fenced", 0,99))))))
-
-combined$All <- ifelse(combined[,5] == "AllPesticides", 1, 
-                      ifelse(combined[,5] == "FoliarFungicide", 0, 
-                             ifelse(combined[,5] == "Insecticide", 0, 
-                                    ifelse(combined[,5] == "Control", 0,
-                                           ifelse(combined[,5] == "SoilDrenchFungicide", 0,
-                                                  ifelse(combined[,5] == "Fenced", 0,99))))))
-
-diversity.psem <- psem(
-  lme(prop_poor_competitor ~ Fertilizer.n + FF + SF + Fenced + I + All, random= ~1 | Year/Block/Plot/Sub, data=combined, na.action=na.omit),
-  #lme(prop_poor_defense ~ Fertilizer.n + Treatment, random= ~1 | Year/Block/Plot/Sub, data=combined, na.action=na.omit),
-  lme(richness ~ prop_poor_competitor + Fertilizer.n + SF, random= ~1 | Year/Block/Plot/Sub, data=combined, na.action=na.omit),
-  lme(evenness ~ richness + prop_poor_competitor + Fertilizer.n, random= ~1 | Year/Block/Plot/Sub, data=combined, na.action=na.omit),
-  lme(invsimpson ~ richness + evenness + prop_poor_competitor + Fertilizer.n + SF, random= ~1 | Year/Block/Plot/Sub, data=combined, na.action=na.omit))
-
-summary(diversity.psem)
-plot(diversity.psem)
-
-diversity.psem <- psem(
-  lme(prop_poor_competitor ~ Fertilizer.n + FF + SF + Fenced + I + All, random= ~1 | Year/Block/Plot/Sub, data=combined, na.action=na.omit),
-  lme(log(invsimpson) ~ prop_poor_competitor + Fertilizer.n + SF, random= ~1 | Year/Block/Plot/Sub, data=combined, na.action=na.omit))
-
-summary(diversity.psem)
-plot(diversity.psem)
-
-View(combined)
-
-###correlation by plot######
-x <- FF_set %>%
-  rbind(Fenced_set) %>%
-  rbind(SF_set) %>%
-  rbind(I_set) %>%
-  rbind(All_set) %>% 
-  mutate(Species = as.factor(Species)) %>%
-  group_by(Year, Block, Treatment) %>%
-  summarize(Consumer_LRR = mean(Consumer_LRR, na.rm = TRUE), 
-         NPK_LRR = mean(NPK_LRR, na.rm = TRUE))
-
-View(x)
-
-y <- diversity %>%
-  filter(Treatment != "Control") %>%
-  group_by(Year, Block, Treatment) %>%
-  summarize(invsimpson = mean(invsimpson),
-            richness = mean(richness),
-            evenness = mean(evenness))
-
-z <- merge(y,x, by=c("Year", "Block", "Treatment"))
-
-z <- z %>%
-  mutate(weighted_tradeoff_correlation = tradeoff_correlation/richness)
-
-hist((z$tradeoff_correlation))
-hist(z$richness)
-hist(z$evenness)
-hist(z$invsimpson)
-
-summary(lm(invsimpson ~ NPK_LRR, data=z))
-
-ggplot(z, aes(tradeoff_correlation, invsimpson)) +
-  geom_point() +
-  geom_smooth(method="lm", se=FALSE)
-
-###Nutrient effect on consumer LRR#####
-#comparing LRR of species to consumers in fertilized plots versus unfertilized#
-#Foliar Fungicide##
-control <- data %>%
-  filter(Treatment == "Control") %>%
-  filter(Fertilizer.f == "1") %>%
-  mutate(control_mass = Mass.g.m.2.) %>%
-  select(Year, Block, Species, control_mass)
-
-FF_NPK <- data %>%
-  filter(Treatment == "Foliar Fungicide") %>%
-  filter(Fertilizer.f == "1")
-
-compare <- merge(FF_NPK, control, by=c("Year", "Block", "Species"), all=TRUE)
-
-compare <- compare %>%
-  filter(Mass.g.m.2. != "NA") %>%
-  mutate(control_mass = replace_na(control_mass, 0.005))
-
-FF_NPK_LRR <- compare %>%
-  mutate(Consumer_NPK_LRR = log(Mass.g.m.2./control_mass)) %>%
-  select(Year, Block, Species, Treatment, Consumer_NPK_LRR)
-
-#distribution of LRRs
-ggplot(FF_NPK_LRR, aes(Consumer_NPK_LRR)) +
-  geom_histogram()
-
-
-FF_NPK_set <- merge(FF_LRR, FF_NPK_LRR, by=c("Year", "Block", "Species"), all=TRUE)
-
-FF_NPK_set <- FF_NPK_set %>%
-  mutate(Treatment = "FoliarFungicide",
-         Treatment = as.factor(Treatment)) %>%
-  #mutate(Consumer_LRR = replace_na(Consumer_LRR, 0.000)) %>%
-  #mutate(NPK_effect = log(Consumer_NPK_LRR - Consumer_LRR)) %>%
-  select(Year, Block, Treatment, Species, Consumer_LRR, Consumer_NPK_LRR)
-
-FF_long <- FF_NPK_set %>%
-  pivot_longer(cols = c("Consumer_LRR", "Consumer_NPK_LRR"), 
-               names_to = "Consumer_NPK", values_to="Consumer_LRR") %>%
-  mutate(Consumer_NPK = as.factor(Consumer_NPK))
-
-levels(FF_long$Consumer_NPK)
-
-#Fencing##
-control <- data %>%
-  filter(Treatment == "Control") %>%
-  filter(Fertilizer.f == "1") %>%
-  mutate(control_mass = Mass.g.m.2.) %>%
-  select(Year, Block, Species, control_mass)
-
-Fenced_NPK <- data %>%
-  filter(Treatment == "Fence") %>%
-  filter(Fertilizer.f == "1")
-
-compare <- merge(Fenced_NPK, control, by=c("Year", "Block", "Species"), all=TRUE)
-
-compare <- compare %>%
-  filter(Mass.g.m.2. != "NA") %>%
-  mutate(control_mass = replace_na(control_mass, 0.005))
-
-Fenced_NPK_LRR <- compare %>%
-  mutate(Consumer_NPK_LRR = log(Mass.g.m.2./control_mass)) %>%
-  select(Year, Block, Species, Treatment, Consumer_NPK_LRR)
-
-#distribution of LRRs
-ggplot(Fenced_NPK_LRR, aes(Consumer_NPK_LRR)) +
-  geom_histogram()
-
-
-Fenced_NPK_set <- merge(Fenced_LRR, Fenced_NPK_LRR, by=c("Year", "Block", "Species"), all=TRUE)
-
-Fenced_NPK_set <- Fenced_NPK_set %>%
-  mutate(Treatment = "Fenced",
-         Treatment = as.factor(Treatment)) %>%
-  #mutate(Consumer_LRR = replace_na(Consumer_LRR, 0.000)) %>%
-  #mutate(NPK_effect = log(Consumer_NPK_LRR - Consumer_LRR)) %>%
-  select(Year, Block, Treatment, Species, Consumer_LRR, Consumer_NPK_LRR)
-
-
-ggplot(Fenced_NPK_set, aes(Consumer_LRR, Consumer_NPK_LRR, col=Treatment)) +
-  geom_point() +
-  geom_smooth(method="lm", col="black")
-
-Fenced_long <- Fenced_NPK_set %>%
-  pivot_longer(cols = c("Consumer_LRR", "Consumer_NPK_LRR"), 
-               names_to = "Consumer_NPK", values_to="Consumer_LRR") %>%
-  mutate(Consumer_NPK = as.factor(Consumer_NPK))
-
-#Soil Fungicide##
-control <- data %>%
-  filter(Treatment == "Control") %>%
-  filter(Fertilizer.f == "1") %>%
-  mutate(control_mass = Mass.g.m.2.) %>%
-  select(Year, Block, Species, control_mass)
-
-SF_NPK <- data %>%
-  filter(Treatment == "SoilDrenchFungicide") %>%
-  filter(Fertilizer.f == "1")
-
-compare <- merge(SF_NPK, control, by=c("Year", "Block", "Species"), all=TRUE)
-
-compare <- compare %>%
-  filter(Mass.g.m.2. != "NA") %>%
-  mutate(control_mass = replace_na(control_mass, 0.005))
-
-SF_NPK_LRR <- compare %>%
-  mutate(Consumer_NPK_LRR = log(Mass.g.m.2./control_mass)) %>%
-  select(Year, Block, Species, Treatment, Consumer_NPK_LRR)
-
-#distribution of LRRs
-ggplot(SF_NPK_LRR, aes(Consumer_NPK_LRR)) +
-  geom_histogram()
-
-
-SF_NPK_set <- merge(SF_LRR, SF_NPK_LRR, by=c("Year", "Block", "Species"), all=TRUE)
-
-SF_NPK_set <- SF_NPK_set %>%
-  mutate(Treatment = "SoilDrenchFungicide",
-         Treatment = as.factor(Treatment)) %>%
-  #mutate(Consumer_LRR = replace_na(Consumer_LRR, 0.000)) %>%
-  #mutate(NPK_effect = log(Consumer_NPK_LRR - Consumer_LRR)) %>%
-  select(Year, Block, Treatment, Species, Consumer_LRR, Consumer_NPK_LRR)
-
-
-ggplot(SF_NPK_set, aes(Consumer_LRR, Consumer_NPK_LRR, col=Treatment)) +
-  geom_point() +
-  geom_smooth(method="lm", col="black")
-
-SF_long <- SF_NPK_set %>%
-  pivot_longer(cols = c("Consumer_LRR", "Consumer_NPK_LRR"), 
-               names_to = "Consumer_NPK", values_to="Consumer_LRR") %>%
-  mutate(Consumer_NPK = as.factor(Consumer_NPK))
-
-#Insecticide##
-control <- data %>%
-  filter(Treatment == "Control") %>%
-  filter(Fertilizer.f == "1") %>%
-  mutate(control_mass = Mass.g.m.2.) %>%
-  select(Year, Block, Species, control_mass)
-
-I_NPK <- data %>%
-  filter(Treatment == "Insecticide") %>%
-  filter(Fertilizer.f == "1")
-
-compare <- merge(I_NPK, control, by=c("Year", "Block", "Species"), all=TRUE)
-
-compare <- compare %>%
-  filter(Mass.g.m.2. != "NA") %>%
-  mutate(control_mass = replace_na(control_mass, 0.005))
-
-I_NPK_LRR <- compare %>%
-  mutate(Consumer_NPK_LRR = log(Mass.g.m.2./control_mass)) %>%
-  select(Year, Block, Species, Treatment, Consumer_NPK_LRR)
-
-#distribution of LRRs
-ggplot(I_NPK_LRR, aes(Consumer_NPK_LRR)) +
-  geom_histogram()
-
-
-I_NPK_set <- merge(I_LRR, I_NPK_LRR, by=c("Year", "Block", "Species"), all=TRUE)
-
-I_NPK_set <- I_NPK_set %>%
-  mutate(Treatment = "Insecticide",
-         Treatment = as.factor(Treatment)) %>%
-  #mutate(Consumer_LRR = replace_na(Consumer_LRR, 0.000)) %>%
-  #mutate(NPK_effect = log(Consumer_NPK_LRR - Consumer_LRR)) %>%
-  select(Year, Block, Treatment, Species, Consumer_LRR, Consumer_NPK_LRR)
-
-
-ggplot(I_NPK_set, aes(Consumer_LRR, Consumer_NPK_LRR, col=Treatment)) +
-  geom_point() +
-  geom_smooth(method="lm", col="black")
-
-I_long <- I_NPK_set %>%
-  pivot_longer(cols = c("Consumer_LRR", "Consumer_NPK_LRR"), 
-               names_to = "Consumer_NPK", values_to="Consumer_LRR") %>%
-  mutate(Consumer_NPK = as.factor(Consumer_NPK))
-
-
-#All Pesticides##
-control <- data %>%
-  filter(Treatment == "Control") %>%
-  filter(Fertilizer.f == "1") %>%
-  mutate(control_mass = Mass.g.m.2.) %>%
-  select(Year, Block, Species, control_mass)
-
-All_NPK <- data %>%
-  filter(Treatment == "AllPesticides") %>%
-  filter(Fertilizer.f == "1")
-
-compare <- merge(All_NPK, control, by=c("Year", "Block", "Species"), all=TRUE)
-
-compare <- compare %>%
-  filter(Mass.g.m.2. != "NA") %>%
-  mutate(control_mass = replace_na(control_mass, 0.005))
-
-All_NPK_LRR <- compare %>%
-  mutate(Consumer_NPK_LRR = log(Mass.g.m.2./control_mass)) %>%
-  select(Year, Block, Species, Treatment, Consumer_NPK_LRR)
-
-#distribution of LRRs
-ggplot(All_NPK_LRR, aes(Consumer_NPK_LRR)) +
-  geom_histogram()
-
-
-All_NPK_set <- merge(All_LRR, All_NPK_LRR, by=c("Year", "Block", "Species"), all=TRUE)
-
-All_NPK_set <- All_NPK_set %>%
-  mutate(Treatment = "AllPesticides",
-         Treatment = as.factor(Treatment)) %>%
-  #mutate(Consumer_LRR = replace_na(Consumer_LRR, 0.000)) %>%
-  #mutate(NPK_effect = log(Consumer_NPK_LRR - Consumer_LRR)) %>%
-  select(Year, Block, Treatment, Species, Consumer_LRR, Consumer_NPK_LRR)
-
-
-ggplot(All_NPK_set, aes(Consumer_LRR, Consumer_NPK_LRR, col=Treatment)) +
-  geom_point() +
-  geom_smooth(method="lm", col="black")
-
-All_long <- All_NPK_set %>%
-  pivot_longer(cols = c("Consumer_LRR", "Consumer_NPK_LRR"), 
-               names_to = "Consumer_NPK", values_to="Consumer_LRR") %>%
-  mutate(Consumer_NPK = as.factor(Consumer_NPK))
-
-#combined sets#
-Consumers_NPK_set <- FF_long %>%
-  rbind(Fenced_long) %>%
-  rbind(SF_long) %>%
-  rbind(I_long) %>%
-  rbind(All_long)
-
-levels(Consumers_NPK_set$Treatment)
-
-ggplot(Consumers_NPK_set, aes(Consumer_NPK, Consumer_LRR, col=Treatment)) +
-  geom_boxplot() +
-  scale_x_discrete(labels=c("Ambient Nutrients", "Fertilized")) +
-  scale_color_locuszoom() +
-  theme(axis.title.x = element_blank())
-
-ggplot(Consumers_NPK_set, aes(Treatment, Consumer_LRR, col=Consumer_NPK)) +
-  geom_boxplot() +
-  #scale_x_discrete(labels=c("Ambient Nutrients", "Fertilized")) +
-  scale_color_locuszoom() +
-  theme(axis.title.x = element_blank())
-
-lme1 <- lme(fixed=Consumer_LRR ~ Consumer_NPK,
-            data= Consumers_NPK_set,
-            random = ~1 | Year/Block, na.action = na.omit)
-
-summary(lme1)
-anova(lme1)
-
-lsmeans(lme(fixed=Consumer_LRR ~ Consumer_NPK * Treatment,
-            data= Consumers_NPK_set,
-            random = ~1 | Year/Block, na.action = na.omit),
-        pairwise ~ Treatment, method="Tukey")
-
-t.test(All_long$Consumer_LRR)
-
-#add in functional group information
-Consumers_NPK_set <- merge(Consumers_NPK_set, species, by="Species")
-
-Consumers_NPK_set <- Consumers_NPK_set %>%
-  mutate(Functional.group =
-           case_when(Species == "Cyperus sp." ~ "C4",
-                     Species == "Carex sp." ~ "C3",
-                     TRUE ~ Functional.group))
-
-#Functional groups#
-Consumers_NPK_set %>%
-  filter(Functional.group != "O") %>%
-  filter(Functional.group != "W") %>%
-  ggplot(., aes(Functional.group, Consumer_LRR, col=Consumer_NPK)) +
-  geom_boxplot() +
-  facet_wrap(~Treatment)
-
-Consumers_NPK_set %>%
-  filter(Functional.group != "O") %>%
-  filter(Functional.group != "W") %>%
-  filter(Consumer_LRR != "NA") %>%
-  group_by(Consumer_NPK, Functional.group) %>%
-  summarize(mean = mean(Consumer_LRR)) %>%
-  ggplot(., aes(Functional.group, mean, fill=Consumer_NPK)) +
-  geom_bar(stat='identity', position='dodge') +
-  scale_color_locuszoom()
-
-lm1 <- lm(Consumer_LRR ~ Consumer_NPK * Functional.group, data=Consumers_NPK_set)
-summary(lm1)
-anova(lm1)
-
-lme1 <- lme(fixed = Consumer_LRR ~ Consumer_NPK * Treatment + Functional.group ,
-            data=Consumers_NPK_set,
-            random = ~1 | Year/Block, na.action = na.omit)
-summary(lme1)
-anova(lme1)
-
-###cohens d####
-#nutrient addition#
-control <- data %>%
-  filter(Treatment == "Control") %>%
-  filter(Fertilizer.f == "0") %>%
-  mutate(control_mass = Mass.g.m.2.) %>%
-  select(Year, Block, Species, control_mass)
-
-nutrient <- data %>%
-  filter(Treatment == "Control") %>%
-  filter(Fertilizer.f == "1")
-
-compare <- merge(nutrient, control, by=c("Year", "Block", "Species"), all=TRUE)
-
-compare <- compare %>%
-  mutate(Mass.g.m.2. = replace_na(Mass.g.m.2., 0.01)) %>%
-  mutate(control_mass = replace_na(control_mass, 0.01))
-
-#calculate means and pooled standard deviation
-means <- compare %>%
-  group_by(Year, Species) %>%
-  summarize(fert_mass = mean(Mass.g.m.2.),
-            control_mass = mean(control_mass),
-            signal = fert_mass - control_mass)
-
-sds <- compare %>%
-  pivot_longer(cols = c("Mass.g.m.2.", "control_mass"), 
-               names_to = "Type", values_to="Mass") %>%
-  group_by(Year, Species) %>%
-  summarize(sd = sd(Mass))
-
-output <- merge(means, sds, by=c("Year", "Species"))
-
-NPK <- output %>%
-  mutate(NPK_cohens_d = signal/sd) %>%
-  select(Year, Species, NPK_cohens_d )
-
-ggplot(NPK, aes(NPK_cohens_d)) +
-  geom_histogram()
-
-#Foliar Fungicide#
-control <- data %>%
-  filter(Treatment == "Control") %>%
-  filter(Fertilizer.f == "0") %>%
-  mutate(control_mass = Mass.g.m.2.) %>%
-  select(Year, Block, Species, control_mass)
-
-FF <- data %>%
-  filter(Treatment == "FoliarFungicide") %>%
-  filter(Fertilizer.f == "0")
-
-compare <- merge(FF, control, by=c("Year", "Block", "Species"), all=TRUE)
-
-compare <- compare %>%
-  mutate(Mass.g.m.2. = replace_na(Mass.g.m.2., 0.01)) %>%
-  mutate(control_mass = replace_na(control_mass, 0.01))
-
-#calculate means and pooled standard deviation
-means <- compare %>%
-  group_by(Year, Species) %>%
-  summarize(consumer_mass = mean(Mass.g.m.2.),
-            control_mass = mean(control_mass),
-            signal = consumer_mass - control_mass)
-
-sds <- compare %>%
-  pivot_longer(cols = c("Mass.g.m.2.", "control_mass"), 
-               names_to = "Type", values_to="Mass") %>%
-  group_by(Year, Species) %>%
-  summarize(sd = sd(Mass))
-
-FF <- merge(means, sds, by=c("Year", "Species"))
-
-FF <- FF %>%
-  mutate(Consumer_cohens_d = signal/sd) %>%
-  select(Year, Species, Consumer_cohens_d )
-
-FF_set <- merge(FF, NPK, by=c("Year","Species")) 
-
-FF_set <- FF_set %>%
-  filter(Consumer_cohens_d != NPK_cohens_d) %>% #remove comparisons that compare two dummy variables (not meaningful comparison)
-  mutate(Treatment = "FoliarFungicide",
-         Treatment = as.factor(Treatment))
-
-sma(formula = Consumer_cohens_d ~ NPK_cohens_d, data=FF_set, method="SMA")
-
-#Fencing#
-control <- data %>%
-  filter(Treatment == "Control") %>%
-  filter(Fertilizer.f == "0") %>%
-  mutate(control_mass = Mass.g.m.2.) %>%
-  select(Year, Block, Species, control_mass)
-
-Fenced <- data %>%
-  filter(Treatment == "Fenced") %>%
-  filter(Fertilizer.f == "0")
-
-compare <- merge(Fenced, control, by=c("Year", "Block", "Species"), all=TRUE)
-
-compare <- compare %>%
-  mutate(Mass.g.m.2. = replace_na(Mass.g.m.2., 0.01)) %>%
-  mutate(control_mass = replace_na(control_mass, 0.01))
-
-#calculate means and pooled standard deviation
-means <- compare %>%
-  group_by(Year, Species) %>%
-  summarize(consumer_mass = mean(Mass.g.m.2.),
-            control_mass = mean(control_mass),
-            signal = consumer_mass - control_mass)
-
-sds <- compare %>%
-  pivot_longer(cols = c("Mass.g.m.2.", "control_mass"), 
-               names_to = "Type", values_to="Mass") %>%
-  group_by(Year, Species) %>%
-  summarize(sd = sd(Mass))
-
-Fenced <- merge(means, sds, by=c("Year", "Species"))
-
-Fenced <- Fenced %>%
-  mutate(Consumer_cohens_d = signal/sd) %>%
-  select(Year, Species, Consumer_cohens_d )
-
-Fenced_set <- merge(Fenced, NPK, by=c("Year","Species")) 
-
-Fenced_set <- Fenced_set %>%
-  filter(Consumer_cohens_d != NPK_cohens_d) %>% #remove comparisons that compare two dummy variables (not meaningful comparison)
-  mutate(Treatment = "Fenced",
-         Treatment = as.factor(Treatment))
-
-sma(formula = Consumer_cohens_d ~ NPK_cohens_d, data=Fenced_set, method="SMA")
-
-#Soil Fungicide#
-control <- data %>%
-  filter(Treatment == "Control") %>%
-  filter(Fertilizer.f == "0") %>%
-  mutate(control_mass = Mass.g.m.2.) %>%
-  select(Year, Block, Species, control_mass)
-
-SF <- data %>%
-  filter(Treatment == "SoilDrenchFungicide") %>%
-  filter(Fertilizer.f == "0")
-
-compare <- merge(SF, control, by=c("Year", "Block", "Species"), all=TRUE)
-
-compare <- compare %>%
-  mutate(Mass.g.m.2. = replace_na(Mass.g.m.2., 0.01)) %>%
-  mutate(control_mass = replace_na(control_mass, 0.01))
-
-#calculate means and pooled standard deviation
-means <- compare %>%
-  group_by(Year, Species) %>%
-  summarize(consumer_mass = mean(Mass.g.m.2.),
-            control_mass = mean(control_mass),
-            signal = consumer_mass - control_mass)
-
-sds <- compare %>%
-  pivot_longer(cols = c("Mass.g.m.2.", "control_mass"), 
-               names_to = "Type", values_to="Mass") %>%
-  group_by(Year, Species) %>%
-  summarize(sd = sd(Mass))
-
-SF <- merge(means, sds, by=c("Year", "Species"))
-
-SF <- SF %>%
-  mutate(Consumer_cohens_d = signal/sd) %>%
-  select(Year, Species, Consumer_cohens_d )
-
-SF_set <- merge(SF, NPK, by=c("Year","Species")) 
-
-SF_set <- SF_set %>%
-  filter(Consumer_cohens_d != NPK_cohens_d) %>% #remove comparisons that compare two dummy variables (not meaningful comparison)
-  mutate(Treatment = "SoilDrenchFungicide",
-         Treatment = as.factor(Treatment))
-
-sma(formula = Consumer_cohens_d ~ NPK_cohens_d, data=SF_set, method="SMA")
-
-#Insecticide#
-control <- data %>%
-  filter(Treatment == "Control") %>%
-  filter(Fertilizer.f == "0") %>%
-  mutate(control_mass = Mass.g.m.2.) %>%
-  select(Year, Block, Species, control_mass)
-
-I <- data %>%
-  filter(Treatment == "Insecticide") %>%
-  filter(Fertilizer.f == "0")
-
-compare <- merge(I, control, by=c("Year", "Block", "Species"), all=TRUE)
-
-compare <- compare %>%
-  mutate(Mass.g.m.2. = replace_na(Mass.g.m.2., 0.01)) %>%
-  mutate(control_mass = replace_na(control_mass, 0.01))
-
-#calculate means and pooled standard deviation
-means <- compare %>%
-  group_by(Year, Species) %>%
-  summarize(consumer_mass = mean(Mass.g.m.2.),
-            control_mass = mean(control_mass),
-            signal = consumer_mass - control_mass)
-
-sds <- compare %>%
-  pivot_longer(cols = c("Mass.g.m.2.", "control_mass"), 
-               names_to = "Type", values_to="Mass") %>%
-  group_by(Year, Species) %>%
-  summarize(sd = sd(Mass))
-
-I <- merge(means, sds, by=c("Year", "Species"))
-
-I <- I %>%
-  mutate(Consumer_cohens_d = signal/sd) %>%
-  select(Year, Species, Consumer_cohens_d )
-
-I_set <- merge(I, NPK, by=c("Year","Species")) 
-
-I_set <- I_set %>%
-  filter(Consumer_cohens_d != NPK_cohens_d) %>% #remove comparisons that compare two dummy variables (not meaningful comparison)
-  mutate(Treatment = "Insecticide",
-         Treatment = as.factor(Treatment))
-
-sma(formula = Consumer_cohens_d ~ NPK_cohens_d, data=I_set, method="SMA")
-
-#All Pesticides#
-control <- data %>%
-  filter(Treatment == "Control") %>%
-  filter(Fertilizer.f == "0") %>%
-  mutate(control_mass = Mass.g.m.2.) %>%
-  select(Year, Block, Species, control_mass)
-
-All <- data %>%
-  filter(Treatment == "AllPesticides") %>%
-  filter(Fertilizer.f == "0")
-
-compare <- merge(All, control, by=c("Year", "Block", "Species"), all=TRUE)
-
-compare <- compare %>%
-  mutate(Mass.g.m.2. = replace_na(Mass.g.m.2., 0.01)) %>%
-  mutate(control_mass = replace_na(control_mass, 0.01))
-
-#calculate means and pooled standard deviation
-means <- compare %>%
-  group_by(Year, Species) %>%
-  summarize(consumer_mass = mean(Mass.g.m.2.),
-            control_mass = mean(control_mass),
-            signal = consumer_mass - control_mass)
-
-sds <- compare %>%
-  pivot_longer(cols = c("Mass.g.m.2.", "control_mass"), 
-               names_to = "Type", values_to="Mass") %>%
-  group_by(Year, Species) %>%
-  summarize(sd = sd(Mass))
-
-All <- merge(means, sds, by=c("Year", "Species"))
-
-All <- All %>%
-  mutate(Consumer_cohens_d = signal/sd) %>%
-  select(Year, Species, Consumer_cohens_d )
-
-All_set <- merge(All, NPK, by=c("Year","Species")) 
-
-All_set <- All_set %>%
-  filter(Consumer_cohens_d != NPK_cohens_d) %>% #remove comparisons that compare two dummy variables (not meaningful comparison)
-  mutate(Treatment = "AllPesticides",
-         Treatment = as.factor(Treatment))
-
-sma(formula = Consumer_cohens_d ~ NPK_cohens_d, data=I_set, method="SMA")
-
-#combine#
-Consumers_set <- FF_set %>%
-  rbind(Fenced_set) %>%
-  rbind(SF_set) %>%
-  rbind(I_set) %>%
-  rbind(All_set)
-
-#cohens d
-summary(sma(formula = Consumer_cohens_d ~ NPK_cohens_d * Treatment, data=Consumers_set, method="SMA"))
-
-#significant positive relationship, no difference among treatments (likelihood ratio test)
-
-ggplot(Consumers_set, aes(Consumer_cohens_d, NPK_cohens_d, col=Treatment)) +
-  geom_point() +
-  geom_smooth(method="lm", se=FALSE) +
-  scale_color_locuszoom()
-  facet_wrap(~Year)
 
 #design ideas#####
 x <- ggplot(Consumers_set, aes(NPK_LRR, Consumer_LRR)) +
